@@ -149,6 +149,8 @@ public class LexicalizedParser implements ViterbiParserWithOptions, Function<Obj
 
 	public Options op;
 
+	private ArrayList<Tree> trees;
+
 	private static final String SERIALIZED_PARSER_PROPERTY = "edu.stanford.nlp.SerializedLexicalizedParser";
 	private static final String DEFAULT_PARSER_LOC = "/u/nlp/data/lexparser/englishPCFG.ser.gz";
 
@@ -203,6 +205,7 @@ public class LexicalizedParser implements ViterbiParserWithOptions, Function<Obj
 	 */
 	public LexicalizedParser(String parserFileOrUrl, Options op) {
 		this.op = op;
+		trees = new ArrayList<Tree>();
 		// System.err.print("Loading parser from file " + parserFileOrUrl);
 		pd = getParserDataFromFile(parserFileOrUrl, op);
 		this.op = pd.pt; // in case a serialized options was read in
@@ -618,6 +621,14 @@ public class LexicalizedParser implements ViterbiParserWithOptions, Function<Obj
 
 	public Tree getBestPCFGParse() {
 		return getBestPCFGParse(true);
+	}
+
+	public ArrayList<Tree> getTrees() {
+		return trees;
+	}
+
+	public void setTrees(ArrayList<Tree> trees) {
+		this.trees = trees;
 	}
 
 	public Tree getBestPCFGParse(boolean stripSubcategories) {
@@ -1988,6 +1999,7 @@ public class LexicalizedParser implements ViterbiParserWithOptions, Function<Obj
 								if (pparser != null && pparser.hasParse() && fallbackToPCFG) {
 									pwErr.println("... falling back to PCFG parse.");
 									ansTree = getBestPCFGParse();
+									trees.add(ansTree);
 									numFallback++;
 								} else {
 									pwErr.println();
@@ -2052,12 +2064,15 @@ public class LexicalizedParser implements ViterbiParserWithOptions, Function<Obj
 						}
 						try {
 							treePrint.printTree(ansTree, Integer.toString(num), pwo);
+							System.out.println("era para imprimir a tree aqui");
 						} catch (RuntimeException re) {
 							pwErr.println("TreePrint.printTree skipped: out of memory (or other error)");
 							re.printStackTrace();
 							numNoMemory++;
 							try {
-								treePrint.printTree(null, Integer.toString(num), pwo);
+								// treePrint.printTree(null,
+								// Integer.toString(num), pwo);
+								System.out.println("era para imprimir a tree aqui 2");
 							} catch (Exception e) {
 								pwo.println("Sentence skipped: out of memory and error calling TreePrint.");
 								e.printStackTrace();

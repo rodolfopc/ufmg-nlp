@@ -31,24 +31,23 @@ public class MyDemo {
 
 	public static void main(String[] args) throws IOException {
 
-		String matchString = "VP < VBD < NP";
+		String matchString = "NP $ VP < (V $ A)";
 		// String tregexCorpus =
 		// "/home/gustavo/Mestrado/NLP/sandbox/tregex-semantic-tagger/tregex_corpus.en";
 
-		// LexicalizedParser lexicalParser = new LexicalizedParser(
-		// "/home/gustavo/Mestrado/NLP/sandbox/tregex-semantic-tagger/tools/stanford-parser/grammar/englishPCFG.ser.gz");
-
 		LexicalizedParser lexicalParser = new LexicalizedParser(
-				"/home/gustavo/Mestrado/NLP/sandbox2/stanford-parser-2010-11-30/cintil.ser.gz");
+				"/home/gustavo/Mestrado/NLP/sandbox/tregex-semantic-tagger/tools/stanford-parser/grammar/englishPCFG.ser.gz");
 
+		String filename = "/home/gustavo/Mestrado/NLP/sandbox/tregex-semantic-tagger/tools/stanford-parser/data/testsent.txt";
 		// String filename =
-		// "/home/gustavo/Mestrado/NLP/sandbox/tregex-semantic-tagger/tools/stanford-parser/data/testsent.txt";
-		String filename = "/home/gustavo/Mestrado/NLP/sandbox/tregex-semantic-tagger/tools/stanford-parser/data/portsent.txt";
+		// "/home/gustavo/Mestrado/NLP/sandbox/tregex-semantic-tagger/tools/stanford-parser/data/portsent.txt";
 
 		String treesString = demoDP(lexicalParser, filename);
-		System.out.println(treesString);
+		// System.out.println(treesString);
 
-		// demoTregex(matchString, treesString);
+		String test = "(ROOT (S (NP (N João)) (VP (V é) (A feliz.))))";
+
+		demoTregex(matchString, test);
 	}
 
 	private static void demoTregex(String matchString, String treesString) throws UnsupportedEncodingException {
