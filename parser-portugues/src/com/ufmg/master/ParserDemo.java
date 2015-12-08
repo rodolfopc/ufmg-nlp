@@ -21,8 +21,8 @@ public class ParserDemo {
 		/* @formatter:off */
 		// , "-outputFormat", "oneline","-tokenized", "-sentences", "newline",
 		// "-uwModel", "edu.stanford.nlp.parser.lexparser.BaseUnknownWordModel",
-		args = new String[] { "/home/gustavo/Mestrado/NLP/sandbox2/stanford-parser-2010-11-30/cintil.ser.gz",
-				"/home/gustavo/Mestrado/NLP/sandbox2/stanford-parser-2010-11-30/portsent.txt" };
+		args = new String[] { "../arquivos/cintil.ser.gz",
+				"../arquivos/porttestsent.txt" };
 
 		/* @formatter:on */
 		String serializedInputFileOrUrl = null;
