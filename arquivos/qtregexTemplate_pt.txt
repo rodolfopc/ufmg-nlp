@@ -1,4 +1,4 @@
-#S < VP < NP
+#S < VP < NA
 Onde VP?  
 
 #S <  (NP $ (VP))

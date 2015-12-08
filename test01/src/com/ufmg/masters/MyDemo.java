@@ -40,12 +40,11 @@ public class MyDemo {
 		String line = gIn.readLine();
 		boolean achouTregex = false;
 		String template = null;
-		while (line != null) {
-
+		while (line != null && template==null) {
 		    if(line.contains("#")){
 		    	line = line.replace("#", "");
 				List<Tree> trees = demoTregex(line, tree);
-				if(trees!=null){
+				if(!trees.isEmpty()){
 					achouTregex = true;
 				}
 		    } else {
@@ -54,10 +53,10 @@ public class MyDemo {
 		    	} 
 		    }
 		    line = gIn.readLine();
-		    
-		} 
+			} 
 		
 		System.out.print(template);
+			
 		
 		// String tregexCorpus =
 		// "/home/gustavo/Mestrado/NLP/sandbox/tregex-semantic-tagger/tregex_corpus.en";
