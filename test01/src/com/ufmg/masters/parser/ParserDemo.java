@@ -15,10 +15,10 @@ import edu.stanford.nlp.trees.TreebankLanguagePack;
 class ParserDemo {
 
 	public static void main(String[] args) {
-		LexicalizedParser lp = new LexicalizedParser(
-				"/home/gustavo/Mestrado/NLP/sandbox/tregex-semantic-tagger/tools/stanford-parser/grammar/englishPCFG.ser.gz");
-		String filename = "/home/gustavo/Mestrado/NLP/sandbox/tregex-semantic-tagger/tools/stanford-parser/data/testsent.txt";
-		demoDP(lp, filename);
+//		LexicalizedParser lp = new LexicalizedParser(
+//				"/home/gustavo/Mestrado/NLP/sandbox/tregex-semantic-tagger/tools/stanford-parser/grammar/englishPCFG.ser.gz");
+//		String filename = "/home/gustavo/Mestrado/NLP/sandbox/tregex-semantic-tagger/tools/stanford-parser/data/testsent.txt";
+//		demoDP(lp, filename);
 		// demoAPI(lp);
 	}
 

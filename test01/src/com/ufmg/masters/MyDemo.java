@@ -36,9 +36,9 @@ public class MyDemo {
 		// "/home/gustavo/Mestrado/NLP/sandbox/tregex-semantic-tagger/tregex_corpus.en";
 
 		LexicalizedParser lexicalParser = new LexicalizedParser(
-				"/home/gustavo/Mestrado/NLP/sandbox/tregex-semantic-tagger/tools/stanford-parser/grammar/englishPCFG.ser.gz");
+				"../arquivos/englishPCFG.ser.gz");
 
-		String filename = "/home/gustavo/Mestrado/NLP/sandbox/tregex-semantic-tagger/tools/stanford-parser/data/testsent.txt";
+		String filename = "../arquivos/testsent.txt";
 		// String filename =
 		// "/home/gustavo/Mestrado/NLP/sandbox/tregex-semantic-tagger/tools/stanford-parser/data/portsent.txt";
 
