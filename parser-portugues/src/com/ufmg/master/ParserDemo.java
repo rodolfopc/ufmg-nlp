@@ -14,6 +14,7 @@ import edu.stanford.nlp.process.DocumentPreprocessor;
 import edu.stanford.nlp.trees.Tree;
 import edu.stanford.nlp.util.Function;
 
+
 public class ParserDemo {
 
 	public static void main(String[] args) {
@@ -70,7 +71,8 @@ public class ParserDemo {
 
 	} // end
 		// main
-
+	
+	
 	// public static void main(String[] args) throws IOException {
 	// String pathname =
 	// "/home/gustavo/Mestrado/NLP/sandbox2/stanford-parser-2010-11-30/cintil.ser.gz";

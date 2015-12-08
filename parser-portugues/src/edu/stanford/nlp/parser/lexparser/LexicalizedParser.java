@@ -1999,7 +1999,6 @@ public class LexicalizedParser implements ViterbiParserWithOptions, Function<Obj
 								if (pparser != null && pparser.hasParse() && fallbackToPCFG) {
 									pwErr.println("... falling back to PCFG parse.");
 									ansTree = getBestPCFGParse();
-									trees.add(ansTree);
 									numFallback++;
 								} else {
 									pwErr.println();
@@ -2064,6 +2063,7 @@ public class LexicalizedParser implements ViterbiParserWithOptions, Function<Obj
 						}
 						try {
 							treePrint.printTree(ansTree, Integer.toString(num), pwo);
+							trees.add(ansTree);
 							System.out.println("era para imprimir a tree aqui");
 						} catch (RuntimeException re) {
 							pwErr.println("TreePrint.printTree skipped: out of memory (or other error)");

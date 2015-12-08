@@ -31,7 +31,7 @@ public class MyDemo {
 
 	public static void main(String[] args) throws IOException {
 
-		String matchString = "NP $ VP < (V $ A)";
+		String matchString = "NP $ VP";
 		// String tregexCorpus =
 		// "/home/gustavo/Mestrado/NLP/sandbox/tregex-semantic-tagger/tregex_corpus.en";
 
