@@ -2,4 +2,4 @@
 Onde VP?  
 
 #S <  (NP $ (VP))
-Quem VP?
+Quem %%VP%%?

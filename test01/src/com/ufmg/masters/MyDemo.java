@@ -8,15 +8,20 @@ import java.io.PrintWriter;
 import java.io.StringReader;
 import java.io.UnsupportedEncodingException;
 import java.util.Collection;
+import java.util.Iterator;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import edu.stanford.nlp.ling.HasWord;
+import edu.stanford.nlp.ling.Label;
 import edu.stanford.nlp.parser.lexparser.LexicalizedParser;
 import edu.stanford.nlp.process.DocumentPreprocessor;
 import edu.stanford.nlp.trees.CollinsHeadFinder;
 import edu.stanford.nlp.trees.GrammaticalStructure;
 import edu.stanford.nlp.trees.GrammaticalStructureFactory;
 import edu.stanford.nlp.trees.HeadFinder;
+import edu.stanford.nlp.trees.LabeledScoredTreeNode;
 import edu.stanford.nlp.trees.MemoryTreebank;
 import edu.stanford.nlp.trees.PennTreebankLanguagePack;
 import edu.stanford.nlp.trees.Tree;
@@ -24,6 +29,7 @@ import edu.stanford.nlp.trees.TreePrint;
 import edu.stanford.nlp.trees.TreeReaderFactory;
 import edu.stanford.nlp.trees.Treebank;
 import edu.stanford.nlp.trees.TreebankLanguagePack;
+import edu.stanford.nlp.trees.Trees;
 import edu.stanford.nlp.trees.tregex.Macros;
 import edu.stanford.nlp.trees.tregex.TregexPattern;
 import edu.stanford.nlp.trees.tregex.TregexPattern.TRegexTreeVisitor;
@@ -38,12 +44,13 @@ public class MyDemo {
 		
 		BufferedReader gIn = new BufferedReader(new FileReader("../arquivos/qtregexTemplate_pt.txt"));
 		String line = gIn.readLine();
+		List<Tree> trees = null;
 		boolean achouTregex = false;
 		String template = null;
 		while (line != null && template==null) {
 		    if(line.contains("#")){
 		    	line = line.replace("#", "");
-				List<Tree> trees = demoTregex(line, tree);
+				trees = demoTregex(line, tree);
 				if(!trees.isEmpty()){
 					achouTregex = true;
 				}
@@ -54,6 +61,43 @@ public class MyDemo {
 		    }
 		    line = gIn.readLine();
 			} 
+		
+
+		if(trees!=null){
+			String pattern = "\\%\\%([A-Z]+)\\%\\%";
+
+		      Pattern r = Pattern.compile(pattern);
+		      Matcher m = r.matcher(template);
+		      String expression = null;
+		      if (m.find( )) {
+		    	  expression = m.group(1);
+		      }
+		      
+			for (int i = 0; i < trees.size(); i++) {
+				Object[] array = trees.get(i).toArray();
+			      if(expression!=null){
+			    	  LabeledScoredTreeNode selectedNode = null;
+						for (int j = 0; j < array.length; j++) {
+							LabeledScoredTreeNode labeledScoredTreeNode = (LabeledScoredTreeNode) array[j];
+							Label label = labeledScoredTreeNode.label();
+							String value = label.value();
+							if(value.equals(expression)){
+								selectedNode = labeledScoredTreeNode;
+								break;
+							}
+						}
+						StringBuilder sb = new StringBuilder();
+//						selectedNode.toStringBuilder(sb, true);
+						for (int j = 0; j < selectedNode.getLeaves().size(); j++) {
+							sb.append(selectedNode.getLeaves().get(j).value()+" ");
+						}
+						String pergunta = template.replace("%%"+expression+"%%", sb.toString());
+						System.out.print(pergunta+"\n");
+						
+			      }
+				
+			}
+		}
 		
 		System.out.print(template);
 			
