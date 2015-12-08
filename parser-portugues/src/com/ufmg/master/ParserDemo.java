@@ -66,6 +66,7 @@ public class ParserDemo {
 
 		ArrayList<Tree> trees = lp.getTrees();
 		for (Tree tree : trees) {
+			
 			System.out.println(tree.toString());
 		}
 
