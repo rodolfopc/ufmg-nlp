@@ -1,0 +1,5 @@
+#S < VP < NP
+Onde VP?  
+
+#S <  (NP $ (VP))
+Quem VP?

@@ -2062,9 +2062,9 @@ public class LexicalizedParser implements ViterbiParserWithOptions, Function<Obj
 							numSkipped++;
 						}
 						try {
-							treePrint.printTree(ansTree, Integer.toString(num), pwo);
-							trees.add(ansTree);
+//							treePrint.printTree(ansTree, Integer.toString(num), pwo);
 							System.out.println("era para imprimir a tree aqui");
+							trees.add(ansTree);
 						} catch (RuntimeException re) {
 							pwErr.println("TreePrint.printTree skipped: out of memory (or other error)");
 							re.printStackTrace();

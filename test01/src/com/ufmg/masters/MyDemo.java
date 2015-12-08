@@ -1,5 +1,7 @@
 package com.ufmg.masters;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
@@ -31,26 +33,51 @@ public class MyDemo {
 
 	public static void main(String[] args) throws IOException {
 
-		String matchString = "NP $ VP";
+		BufferedReader readTree = new BufferedReader(new FileReader("../arquivos/file.txt"));
+		String tree = readTree.readLine();
+		
+		BufferedReader gIn = new BufferedReader(new FileReader("../arquivos/qtregexTemplate_pt.txt"));
+		String line = gIn.readLine();
+		boolean achouTregex = false;
+		String template = null;
+		while (line != null) {
+
+		    if(line.contains("#")){
+		    	line = line.replace("#", "");
+				List<Tree> trees = demoTregex(line, tree);
+				if(trees!=null){
+					achouTregex = true;
+				}
+		    } else {
+		    	if(achouTregex) {
+		    		template = line;
+		    	} 
+		    }
+		    line = gIn.readLine();
+		    
+		} 
+		
+		System.out.print(template);
+		
 		// String tregexCorpus =
 		// "/home/gustavo/Mestrado/NLP/sandbox/tregex-semantic-tagger/tregex_corpus.en";
 
-		LexicalizedParser lexicalParser = new LexicalizedParser(
-				"../arquivos/englishPCFG.ser.gz");
-
-		String filename = "../arquivos/testsent.txt";
+//		LexicalizedParser lexicalParser = new LexicalizedParser(
+//				"../arquivos/englishPCFG.ser.gz");
+//
+//		String filename = "../arquivos/testsent.txt";
 		// String filename =
 		// "/home/gustavo/Mestrado/NLP/sandbox/tregex-semantic-tagger/tools/stanford-parser/data/portsent.txt";
 
-		String treesString = demoDP(lexicalParser, filename);
+//		String treesString = demoDP(lexicalParser, filename);
 		// System.out.println(treesString);
 
-		String test = "(ROOT (S (NP (N João)) (VP (V é) (A feliz.))))";
+//		String test = "(ROOT (S (NP (N João)) (VP (V é) (A feliz.))))";
 
-		demoTregex(matchString, test);
+//		demoTregex(matchString, line);
 	}
 
-	private static void demoTregex(String matchString, String treesString) throws UnsupportedEncodingException {
+	private static List<Tree> demoTregex(String matchString, String treesString) throws UnsupportedEncodingException {
 		String encoding = "UTF-8";
 		StringBuilder treePrintFormats = new StringBuilder();
 		treePrintFormats.append("penn,");
@@ -88,6 +115,7 @@ public class MyDemo {
 		for (Tree tree : matchedTrees) {
 			System.out.println(tree.nodeString());
 		}
+		return matchedTrees;
 	}
 
 	private static String demoDP(LexicalizedParser lp, String filename) {

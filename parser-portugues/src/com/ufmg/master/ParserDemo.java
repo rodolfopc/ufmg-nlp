@@ -1,5 +1,8 @@
 package com.ufmg.master;
 
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -65,9 +68,24 @@ public class ParserDemo {
 				sentenceDelimiter, escaper, tagDelimiter);
 
 		ArrayList<Tree> trees = lp.getTrees();
-		for (Tree tree : trees) {
-			
-			System.out.println(tree.toString());
+		PrintWriter writer = null;
+		try {
+			writer = new PrintWriter("../arquivos/file.txt", "UTF-8");
+			for (Tree tree : trees) {
+				StringBuilder sb = new StringBuilder();
+				tree.toStringBuilder(sb, true);
+				writer.println(sb.toString());
+				System.out.println(sb.toString());
+			};
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally{
+			if(writer!=null)
+				writer.close();
 		}
 
 	} // end
