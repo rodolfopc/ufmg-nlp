@@ -49,7 +49,7 @@ public class ParserDemo {
 
 		Options op = new Options();
 
-		sentenceDelimiter = "\n";
+		sentenceDelimiter = ".";
 
 		serializedInputFileOrUrl = args[0];
 		argIndex++;

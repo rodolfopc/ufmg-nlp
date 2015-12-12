@@ -937,6 +937,7 @@ public abstract class TregexPattern implements Serializable {
 	public static class TRegexTreeVisitor implements TreeVisitor {
 
 		private static List<Tree> matchedTrees = null;
+		private static List<Tree> matchedSubTress = null;
 		public static boolean printNumMatchesToStdOut = false;
 		public static boolean printNonMatchingTrees = false;
 		public static boolean printSubtreeCode = false;
@@ -960,6 +961,7 @@ public abstract class TregexPattern implements Serializable {
 			this.p = p;
 			this.handles = handles;
 			matchedTrees = new ArrayList<>();
+			matchedSubTress = new ArrayList<>();
 			try {
 				pw = new PrintWriter(new OutputStreamWriter(System.out, encoding), true);
 			} catch (UnsupportedEncodingException e) {
@@ -1036,6 +1038,7 @@ public abstract class TregexPattern implements Serializable {
 						}
 					} else {
 						tp.printTree(match.getMatch(), pw);
+						matchedSubTress.add(match.getMatch());
 					}
 					// pw.println(); // TreePrint already puts a blank line in
 				} // end if (printMatches)
@@ -1048,6 +1051,10 @@ public abstract class TregexPattern implements Serializable {
 
 		public List<Tree> getMatchedTrees() {
 			return matchedTrees;
+		}
+
+		public List<Tree> getMatchedSubTrees() {
+			return matchedSubTress;
 		}
 
 	} // end class TRegexTreeVisitor
