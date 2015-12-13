@@ -1,12 +1,14 @@
 package edu.stanford.nlp.trees.tregex;
 
-import edu.stanford.nlp.util.Function;
-import edu.stanford.nlp.trees.Tree;
-import edu.stanford.nlp.util.Pair;
 
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import edu.stanford.nlp.trees.Tree;
+import edu.stanford.nlp.util.Function;
+import edu.stanford.nlp.util.Pair;
+
 
 class DescriptionPattern extends TregexPattern {
 

@@ -1,10 +1,5 @@
 package edu.stanford.nlp.util;
 
-import edu.stanford.nlp.io.RuntimeIOException;
-import edu.stanford.nlp.ling.CoreLabel;
-import edu.stanford.nlp.ling.HasOffset;
-import edu.stanford.nlp.ling.HasWord;
-import edu.stanford.nlp.math.SloppyMath;
 
 import java.io.*;
 import java.lang.reflect.Field;
@@ -13,6 +8,14 @@ import java.lang.reflect.Method;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import edu.stanford.nlp.io.RuntimeIOException;
+import edu.stanford.nlp.ling.CoreLabel;
+import edu.stanford.nlp.ling.HasOffset;
+import edu.stanford.nlp.ling.HasWord;
+import edu.stanford.nlp.math.SloppyMath;
+
+
 
 /**
  * StringUtils is a class for random String things, including output

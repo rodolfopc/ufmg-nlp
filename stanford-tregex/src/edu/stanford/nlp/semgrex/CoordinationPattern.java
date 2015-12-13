@@ -5,6 +5,9 @@ import java.util.*;
 import edu.stanford.nlp.ling.IndexedWord;
 import edu.stanford.nlp.trees.semgraph.SemanticGraph;
 
+
+
+
 /** @author Chloe Kiddon */
 public class CoordinationPattern extends SemgrexPattern {
 

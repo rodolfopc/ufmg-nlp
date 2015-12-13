@@ -1,11 +1,13 @@
 package edu.stanford.nlp.trees.international.arabic;
 
-import edu.stanford.nlp.trees.PennTreebankTokenizer;
-import edu.stanford.nlp.process.Tokenizer;
 
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.Reader;
+
+import edu.stanford.nlp.process.Tokenizer;
+import edu.stanford.nlp.trees.PennTreebankTokenizer;
+
 
 
 /**

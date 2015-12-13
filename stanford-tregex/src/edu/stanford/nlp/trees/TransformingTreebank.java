@@ -1,13 +1,16 @@
 package edu.stanford.nlp.trees;
 
-import edu.stanford.nlp.util.Timing;
-import edu.stanford.nlp.ling.Label;
 
 import java.io.File;
 import java.io.FileFilter;
 import java.io.Reader;
 import java.util.Iterator;
 import java.util.Arrays;
+
+import edu.stanford.nlp.ling.Label;
+import edu.stanford.nlp.util.Timing;
+
+
 
 
 /** This class wraps another Treebank, and will vend trees that have been through

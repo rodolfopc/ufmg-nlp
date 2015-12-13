@@ -69,6 +69,9 @@ import edu.stanford.nlp.util.Pair;
 import edu.stanford.nlp.util.StringUtils;
 import edu.stanford.nlp.util.Timing;
 
+
+
+
 /**
  * A TregexPattern is a <code>tgrep</code>-type pattern for matching tree node
  * configurations. Unlike <code>tgrep</code> or <code>tgrep2</code>but like Unix
@@ -977,9 +980,10 @@ public abstract class TregexPattern implements Serializable {
 		public void visitTree(Tree tree) {
 			treeNumber++;
 			if (printTree) {
-				pw.print(treeNumber + ":");
-				pw.println("Next tree read:");
-				tp.printTree(tree, pw);
+				//TIREI
+//				pw.print(treeNumber + ":");
+//				pw.println("Next tree read:");
+//				tp.printTree(tree, pw);
 			}
 			TregexMatcher match = p.matcher(tree);
 			if (printNonMatchingTrees) {
@@ -988,7 +992,8 @@ public abstract class TregexPattern implements Serializable {
 					numMatches++;
 
 				} else {
-					tp.printTree(tree, pw);
+					//TIREI
+//					tp.printTree(tree, pw);
 				}
 				return;
 			}
@@ -1037,7 +1042,8 @@ public abstract class TregexPattern implements Serializable {
 							}
 						}
 					} else {
-						tp.printTree(match.getMatch(), pw);
+						//TIREI
+//						tp.printTree(match.getMatch(), pw);
 						matchedSubTress.add(match.getMatch());
 					}
 					// pw.println(); // TreePrint already puts a blank line in

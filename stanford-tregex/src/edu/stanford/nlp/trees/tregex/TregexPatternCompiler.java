@@ -32,11 +32,13 @@ import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.List;
 
-import edu.stanford.nlp.util.Function;
-import edu.stanford.nlp.util.Pair;
 import edu.stanford.nlp.trees.CollinsHeadFinder;
 import edu.stanford.nlp.trees.HeadFinder;
 import edu.stanford.nlp.trees.PennTreebankLanguagePack;
+import edu.stanford.nlp.util.Function;
+import edu.stanford.nlp.util.Pair;
+
+
 
 /**
  * A class for compiling TregexPatterns with specific HeadFinders and or

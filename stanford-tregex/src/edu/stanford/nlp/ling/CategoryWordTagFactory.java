@@ -1,5 +1,9 @@
 package edu.stanford.nlp.ling;
 
+import edu.stanford.nlp.ling.CategoryWordTag;
+import edu.stanford.nlp.ling.Label;
+import edu.stanford.nlp.ling.LabelFactory;
+
 
 /**
  * A <code>CategoryWordTagFactory</code> is a factory that makes

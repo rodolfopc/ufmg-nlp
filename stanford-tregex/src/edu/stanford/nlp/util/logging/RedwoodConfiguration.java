@@ -7,6 +7,17 @@ import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import edu.stanford.nlp.util.logging.Color;
+import edu.stanford.nlp.util.logging.LogRecordHandler;
+import edu.stanford.nlp.util.logging.OutputHandler;
+import edu.stanford.nlp.util.logging.Redwood;
+import edu.stanford.nlp.util.logging.RedwoodConfiguration;
+import edu.stanford.nlp.util.logging.RepeatedRecordHandler;
+import edu.stanford.nlp.util.logging.Style;
+import edu.stanford.nlp.util.logging.VisibilityHandler;
+
+
+
 /**
  * A class which encapsulates configuration settings for Redwood.
  * The class operates on the builder model; that is, you can chain method

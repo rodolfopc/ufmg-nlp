@@ -1,11 +1,14 @@
 package edu.stanford.nlp.trees;
 
-import edu.stanford.nlp.ling.Label;
-import edu.stanford.nlp.util.Scored;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+
+import edu.stanford.nlp.ling.Label;
+import edu.stanford.nlp.util.Scored;
+
+
 
 /**
  * A <code>Constituent</code> object defines a generic edge in a graph.

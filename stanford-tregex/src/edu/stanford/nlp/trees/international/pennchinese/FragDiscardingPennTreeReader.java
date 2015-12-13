@@ -1,12 +1,14 @@
 package edu.stanford.nlp.trees.international.pennchinese;
 
+
+import java.io.*;
+
 import edu.stanford.nlp.process.Tokenizer;
 import edu.stanford.nlp.trees.PennTreeReader;
 import edu.stanford.nlp.trees.Tree;
 import edu.stanford.nlp.trees.TreeFactory;
 import edu.stanford.nlp.trees.TreeNormalizer;
 
-import java.io.*;
 
 /**
  * @author Galen Andrew

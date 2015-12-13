@@ -33,15 +33,18 @@ import java.text.NumberFormat;
 import java.util.*;
 import java.util.regex.Pattern;
 
+import edu.stanford.nlp.io.IOUtils;
+import edu.stanford.nlp.io.RuntimeIOException;
 import edu.stanford.nlp.ling.CoreLabel;
-import edu.stanford.nlp.ling.CoreAnnotations.TextAnnotation;
-import edu.stanford.nlp.ling.Word;
 import edu.stanford.nlp.ling.HasWord;
+import edu.stanford.nlp.ling.Word;
+import edu.stanford.nlp.ling.CoreAnnotations.TextAnnotation;
 import edu.stanford.nlp.objectbank.TokenizerFactory;
 import edu.stanford.nlp.util.StringUtils;
 import edu.stanford.nlp.util.Timing;
-import edu.stanford.nlp.io.IOUtils;
-import edu.stanford.nlp.io.RuntimeIOException;
+
+
+
 
 
 /**

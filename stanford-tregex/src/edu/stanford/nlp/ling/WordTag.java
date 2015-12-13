@@ -3,6 +3,15 @@ package edu.stanford.nlp.ling;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 
+import edu.stanford.nlp.ling.HasTag;
+import edu.stanford.nlp.ling.HasWord;
+import edu.stanford.nlp.ling.Label;
+import edu.stanford.nlp.ling.LabelFactory;
+import edu.stanford.nlp.ling.WordTag;
+import edu.stanford.nlp.ling.WordTagFactory;
+
+
+
 /**
  * A WordTag corresponds to a tagged (e.g., for part of speech) word
  * and is implemented with String-valued word and tag.  It implements

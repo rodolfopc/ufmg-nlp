@@ -9,12 +9,15 @@ import java.util.logging.Logger;
 
 import edu.stanford.nlp.io.IOUtils;
 import edu.stanford.nlp.ling.CoreAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.LemmaAnnotation;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.ling.Word;
 import edu.stanford.nlp.ling.WordLemmaTag;
 import edu.stanford.nlp.ling.WordTag;
+import edu.stanford.nlp.ling.CoreAnnotations.LemmaAnnotation;
 import edu.stanford.nlp.util.Function;
+
+
+
 
 
 /**

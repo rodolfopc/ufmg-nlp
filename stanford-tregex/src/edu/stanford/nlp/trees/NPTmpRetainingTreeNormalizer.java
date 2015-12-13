@@ -1,12 +1,15 @@
 package edu.stanford.nlp.trees;
 
-import edu.stanford.nlp.ling.Label;
-import edu.stanford.nlp.ling.LabelFactory;
-import edu.stanford.nlp.util.Filter;
 
 import java.io.Reader;
 import java.util.regex.Pattern;
 import java.util.*;
+
+import edu.stanford.nlp.ling.Label;
+import edu.stanford.nlp.ling.LabelFactory;
+import edu.stanford.nlp.util.Filter;
+
+
 
 
 /**

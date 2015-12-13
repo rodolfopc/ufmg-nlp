@@ -48,6 +48,8 @@ import javax.swing.event.MouseInputAdapter;
 import edu.stanford.nlp.trees.Tree;
 import edu.stanford.nlp.util.Pair;
 
+
+
 /**
  * Class for creating the panel which shows a graphical version of the tree (as in TreeJPanel) as well
  * as the file name of the file from which the tree is from.

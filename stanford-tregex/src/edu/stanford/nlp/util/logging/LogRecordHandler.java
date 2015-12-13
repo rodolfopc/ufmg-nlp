@@ -1,9 +1,11 @@
 package edu.stanford.nlp.util.logging;
 
-import edu.stanford.nlp.util.logging.Redwood.Record;
 
 import java.util.Collections;
 import java.util.List;
+
+import edu.stanford.nlp.util.logging.Redwood.Record;
+
 
 /**
  * A log message handler. This can take the role of a filter, which blocks future handlers from

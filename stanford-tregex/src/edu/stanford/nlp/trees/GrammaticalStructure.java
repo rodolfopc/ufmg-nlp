@@ -1,9 +1,36 @@
 package edu.stanford.nlp.trees;
 
-import java.io.*;
+import static edu.stanford.nlp.trees.GrammaticalRelation.DEPENDENT;
+import static edu.stanford.nlp.trees.GrammaticalRelation.GOVERNOR;
+import static edu.stanford.nlp.trees.GrammaticalRelation.ROOT;
+
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.LineNumberReader;
+import java.io.PrintStream;
+import java.io.Reader;
+import java.io.StringReader;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.util.*;
+import java.util.AbstractCollection;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Properties;
+import java.util.Set;
+import java.util.TreeSet;
+import java.util.WeakHashMap;
 import java.util.concurrent.locks.Lock;
 
 import edu.stanford.nlp.io.RuntimeIOException;
@@ -25,9 +52,6 @@ import edu.stanford.nlp.util.Generics;
 import edu.stanford.nlp.util.ReflectionLoading;
 import edu.stanford.nlp.util.StringUtils;
 
-import static edu.stanford.nlp.trees.GrammaticalRelation.DEPENDENT;
-import static edu.stanford.nlp.trees.GrammaticalRelation.GOVERNOR;
-import static edu.stanford.nlp.trees.GrammaticalRelation.ROOT;
 
 
 

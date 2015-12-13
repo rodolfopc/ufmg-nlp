@@ -1,9 +1,12 @@
 package edu.stanford.nlp.semgrex;
 
+
+import java.util.*;
+
 import edu.stanford.nlp.ling.IndexedWord;
 import edu.stanford.nlp.trees.semgraph.SemanticGraph;
 
-import java.util.*;
+
 
 /**
  * Represents an alignment between a text and a hypothesis as a map from

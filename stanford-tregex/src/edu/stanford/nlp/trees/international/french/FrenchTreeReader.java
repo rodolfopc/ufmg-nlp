@@ -12,7 +12,6 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 import edu.stanford.nlp.io.ReaderInputStream;
-import edu.stanford.nlp.ling.CoreAnnotations.SentenceIDAnnotation;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.ling.HasContext;
 import edu.stanford.nlp.ling.HasIndex;
@@ -20,6 +19,7 @@ import edu.stanford.nlp.ling.HasTag;
 import edu.stanford.nlp.ling.HasWord;
 import edu.stanford.nlp.ling.Label;
 import edu.stanford.nlp.ling.Sentence;
+import edu.stanford.nlp.ling.CoreAnnotations.SentenceIDAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.UTypeAnnotation;
 import edu.stanford.nlp.trees.LabeledScoredTreeFactory;
 import edu.stanford.nlp.trees.Tree;
@@ -29,6 +29,9 @@ import edu.stanford.nlp.trees.TreeReader;
 import edu.stanford.nlp.trees.TreeReaderFactory;
 import edu.stanford.nlp.trees.TreebankLanguagePack;
 import edu.stanford.nlp.util.XMLUtils;
+
+
+
 
 /**
  * A reader for XML format French Treebank files. Note that the raw

@@ -1,18 +1,20 @@
 package edu.stanford.nlp.objectbank;
 
-import edu.stanford.nlp.util.AbstractIterator;
-import edu.stanford.nlp.util.Function;
 
-import java.util.List;
+import java.io.File;
+import java.io.IOException;
+import java.io.Reader;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Iterator;
+import java.util.List;
 import java.util.NoSuchElementException;
-import java.io.Reader;
-import java.io.File;
-import java.io.IOException;
-import java.io.Serializable;
+
+import edu.stanford.nlp.util.AbstractIterator;
+import edu.stanford.nlp.util.Function;
+
 
 /**
  * The ObjectBank class is designed to make it easy to change the format/source

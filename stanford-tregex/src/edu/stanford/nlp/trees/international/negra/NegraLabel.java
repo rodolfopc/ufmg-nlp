@@ -1,11 +1,15 @@
 package edu.stanford.nlp.trees.international.negra;
 
-import edu.stanford.nlp.ling.StringLabel;
-import edu.stanford.nlp.ling.LabelFactory;
-import edu.stanford.nlp.ling.Label;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import edu.stanford.nlp.ling.Label;
+import edu.stanford.nlp.ling.LabelFactory;
+import edu.stanford.nlp.ling.StringLabel;
+
+
+
 
 /* An object for edge labels as implemented in the Negra treebank.
  * Negra labels need a CATEGORY, an EDGE LABEL, and a MORPHOLOGICAL

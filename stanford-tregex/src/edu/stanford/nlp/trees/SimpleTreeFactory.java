@@ -1,8 +1,12 @@
 package edu.stanford.nlp.trees;
 
-import edu.stanford.nlp.ling.Label;
 
 import java.util.List;
+
+import edu.stanford.nlp.ling.Label;
+
+
+
 
 
 /**

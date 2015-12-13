@@ -28,18 +28,20 @@
 
 package edu.stanford.nlp.trees.tregex.tsurgeon;
 
-import edu.stanford.nlp.trees.*;
-import edu.stanford.nlp.trees.tregex.Macros;
-import edu.stanford.nlp.trees.tregex.TregexPattern;
-import edu.stanford.nlp.trees.tregex.TregexPatternCompiler;
-import edu.stanford.nlp.trees.tregex.TregexMatcher;
-import edu.stanford.nlp.util.StringUtils;
-import edu.stanford.nlp.util.Pair;
 
 import java.util.*;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 import java.io.*;
+
+import edu.stanford.nlp.trees.*;
+import edu.stanford.nlp.trees.tregex.Macros;
+import edu.stanford.nlp.trees.tregex.TregexMatcher;
+import edu.stanford.nlp.trees.tregex.TregexPattern;
+import edu.stanford.nlp.trees.tregex.TregexPatternCompiler;
+import edu.stanford.nlp.util.Pair;
+import edu.stanford.nlp.util.StringUtils;
+
 
 /** Tsurgeon provides a way of editing trees based on a set of operations that
  *  are applied to tree locations matching a tregex pattern.

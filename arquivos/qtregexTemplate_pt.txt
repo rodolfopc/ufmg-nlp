@@ -1,5 +1,8 @@
 #S < VP < NA
-Onde VP?  
+Onde %%VP%%?  
 
 #S <  (NP $ (VP))
-Quem %%VP%%?
+[.entity=LOCAL.]Onde %%VP%%?
+[.entity=COISA.]O que %%VP%%?
+[.entity=PESSOA.]Quem %%VP%%?
+[.entity=TEMPO.]Quando %%VP%%?

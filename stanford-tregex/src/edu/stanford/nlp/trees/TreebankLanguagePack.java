@@ -1,12 +1,15 @@
 package edu.stanford.nlp.trees;
 
-import edu.stanford.nlp.objectbank.TokenizerFactory;
-import edu.stanford.nlp.util.Function;
-import edu.stanford.nlp.util.Filter;
-import edu.stanford.nlp.international.morph.MorphoFeatureSpecification;
-import edu.stanford.nlp.ling.HasWord;
 
 import java.io.Serializable;
+
+import edu.stanford.nlp.international.morph.MorphoFeatureSpecification;
+import edu.stanford.nlp.ling.HasWord;
+import edu.stanford.nlp.objectbank.TokenizerFactory;
+import edu.stanford.nlp.util.Filter;
+import edu.stanford.nlp.util.Function;
+
+
 
 
 /**

@@ -1,18 +1,11 @@
 package edu.stanford.nlp.parser.lexparser;
 
-import edu.stanford.nlp.ling.HasTag;
-import edu.stanford.nlp.ling.HasWord;
-import edu.stanford.nlp.stats.ClassicCounter;
-import edu.stanford.nlp.trees.Tree;
-import edu.stanford.nlp.util.StringUtils;
-import edu.stanford.nlp.util.HashIndex;
-import edu.stanford.nlp.util.Index;
 
-import static edu.stanford.nlp.parser.lexparser.IntTaggedWord.ANY_WORD_INT;
-import static edu.stanford.nlp.parser.lexparser.IntTaggedWord.ANY_TAG_INT;
-import static edu.stanford.nlp.parser.lexparser.IntTaggedWord.STOP_WORD_INT;
-import static edu.stanford.nlp.parser.lexparser.IntTaggedWord.STOP_TAG_INT;
 import static edu.stanford.nlp.parser.lexparser.IntDependency.ANY_DISTANCE_INT;
+import static edu.stanford.nlp.parser.lexparser.IntTaggedWord.ANY_TAG_INT;
+import static edu.stanford.nlp.parser.lexparser.IntTaggedWord.ANY_WORD_INT;
+import static edu.stanford.nlp.parser.lexparser.IntTaggedWord.STOP_TAG_INT;
+import static edu.stanford.nlp.parser.lexparser.IntTaggedWord.STOP_WORD_INT;
 
 import java.io.*;
 import java.text.NumberFormat;
@@ -20,6 +13,16 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
+
+import edu.stanford.nlp.ling.HasTag;
+import edu.stanford.nlp.ling.HasWord;
+import edu.stanford.nlp.stats.ClassicCounter;
+import edu.stanford.nlp.trees.Tree;
+import edu.stanford.nlp.util.HashIndex;
+import edu.stanford.nlp.util.Index;
+import edu.stanford.nlp.util.StringUtils;
+
+
 
 public class MLEDependencyGrammar extends AbstractDependencyGrammar {
 

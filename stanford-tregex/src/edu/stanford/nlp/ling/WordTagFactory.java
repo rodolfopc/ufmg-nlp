@@ -1,5 +1,11 @@
 package edu.stanford.nlp.ling;
 
+import edu.stanford.nlp.ling.HasTag;
+import edu.stanford.nlp.ling.Label;
+import edu.stanford.nlp.ling.LabelFactory;
+import edu.stanford.nlp.ling.TaggedWordFactory;
+import edu.stanford.nlp.ling.WordTag;
+
 /**
  * A <code>WordTagFactory</code> acts as a factory for creating
  * objects of class <code>WordTag</code>.  Note that

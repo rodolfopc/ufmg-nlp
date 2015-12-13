@@ -1,11 +1,8 @@
 package edu.stanford.nlp.process;
 
 
-import edu.stanford.nlp.util.Function;
-import edu.stanford.nlp.util.StringUtils;
 
 
-import edu.stanford.nlp.ling.HasWord;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,6 +10,12 @@ import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import edu.stanford.nlp.ling.HasWord;
+import edu.stanford.nlp.util.Function;
+import edu.stanford.nlp.util.StringUtils;
+
+
 
 
 /**

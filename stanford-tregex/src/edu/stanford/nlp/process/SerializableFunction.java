@@ -1,9 +1,11 @@
 package edu.stanford.nlp.process;
 
 
-import edu.stanford.nlp.util.Function;
 
 import java.io.Serializable;
+
+import edu.stanford.nlp.util.Function;
+
 
 /**
  * This interface is a conjunction of Function and Serializable, which is

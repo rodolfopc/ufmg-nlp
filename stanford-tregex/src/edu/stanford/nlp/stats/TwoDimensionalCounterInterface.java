@@ -1,9 +1,11 @@
 package edu.stanford.nlp.stats;
 
-import edu.stanford.nlp.util.Pair;
 
 import java.text.NumberFormat;
 import java.util.*;
+
+import edu.stanford.nlp.util.Pair;
+
 
 /**
  * Interface representing a mapping between pairs of typed objects and double

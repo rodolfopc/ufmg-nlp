@@ -1,5 +1,6 @@
 package edu.stanford.nlp.util.logging;
 
+import edu.stanford.nlp.util.logging.PrettyLogger;
 import edu.stanford.nlp.util.logging.Redwood.RedwoodChannels;
 
 /**

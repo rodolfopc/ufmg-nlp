@@ -1,9 +1,11 @@
 package edu.stanford.nlp.trees;
 
-import edu.stanford.nlp.process.TokenizerAdapter;
 
 import java.io.Reader;
 import java.io.StreamTokenizer;
+
+import edu.stanford.nlp.process.TokenizerAdapter;
+
 
 
 /**

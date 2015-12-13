@@ -1,14 +1,17 @@
 package edu.stanford.nlp.trees;
 
-import edu.stanford.nlp.ling.CoreAnnotations.CopyAnnotation;
-import edu.stanford.nlp.ling.CyclicCoreLabel;
-import edu.stanford.nlp.ling.Word;
-import edu.stanford.nlp.util.*;
 
 import java.io.*;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.util.*;
+
+import edu.stanford.nlp.ling.CyclicCoreLabel;
+import edu.stanford.nlp.ling.Word;
+import edu.stanford.nlp.ling.CoreAnnotations.CopyAnnotation;
+import edu.stanford.nlp.util.*;
+
+
 
 import static edu.stanford.nlp.trees.EnglishGrammaticalRelations.*;
 import static edu.stanford.nlp.trees.GrammaticalRelation.*;

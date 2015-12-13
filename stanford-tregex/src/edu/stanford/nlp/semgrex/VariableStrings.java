@@ -1,9 +1,11 @@
 package edu.stanford.nlp.semgrex;
 
-import edu.stanford.nlp.stats.IntCounter;
 
 import java.util.Map;
 import java.util.HashMap;
+
+import edu.stanford.nlp.stats.IntCounter;
+
 
 /** a class that takes care of the stuff necessary for variable strings.
  *

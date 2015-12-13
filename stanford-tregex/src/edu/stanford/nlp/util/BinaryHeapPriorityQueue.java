@@ -1,6 +1,12 @@
 package edu.stanford.nlp.util;
 
-import java.util.*;
+import java.util.AbstractSet;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.NoSuchElementException;
 
 /**
  * PriorityQueue with explicit double priority values.  Larger doubles are higher priorities.  BinaryHeap-backed.

@@ -1,12 +1,15 @@
 package edu.stanford.nlp.objectbank;
 
-import edu.stanford.nlp.util.AbstractIterator;
-import edu.stanford.nlp.io.EncodingFileReader;
 
 import java.io.*;
 import java.net.URL;
 import java.util.*;
 import java.util.zip.*;
+
+import edu.stanford.nlp.io.EncodingFileReader;
+import edu.stanford.nlp.util.AbstractIterator;
+
+
 
 /**
  * A ReaderIteratorFactory provides a means of getting an Iterator

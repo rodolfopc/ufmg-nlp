@@ -17,6 +17,9 @@ import edu.stanford.nlp.trees.tregex.TregexPattern;
 import edu.stanford.nlp.trees.tregex.gui.FileTreeNode.FileTreeNodeListener;
 import edu.stanford.nlp.trees.tregex.gui.TregexGUI.FilterType;
 
+
+
+
 /**
  * Component for managing the data for files containing trees.
  *

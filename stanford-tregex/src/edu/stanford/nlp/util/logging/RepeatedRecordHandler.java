@@ -1,11 +1,13 @@
 package edu.stanford.nlp.util.logging;
 
-import edu.stanford.nlp.util.logging.Redwood.Record;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Stack;
+
+import edu.stanford.nlp.util.logging.Redwood.Record;
+
 
 /**
  * Filters repeated messages and replaces them with the number of times they were logged.

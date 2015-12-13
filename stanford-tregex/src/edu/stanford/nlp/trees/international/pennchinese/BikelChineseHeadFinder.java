@@ -1,9 +1,11 @@
 package edu.stanford.nlp.trees.international.pennchinese;
 
+
+import java.util.HashMap;
+
 import edu.stanford.nlp.trees.AbstractCollinsHeadFinder;
 import edu.stanford.nlp.trees.TreebankLanguagePack;
 
-import java.util.HashMap;
 
 /**
  * A headfinder implementing Dan Bikel's head rules.

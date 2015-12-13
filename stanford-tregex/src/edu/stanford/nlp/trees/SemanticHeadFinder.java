@@ -1,13 +1,17 @@
 package edu.stanford.nlp.trees;
 
+
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+
 import edu.stanford.nlp.ling.HasCategory;
 import edu.stanford.nlp.ling.HasTag;
 import edu.stanford.nlp.ling.HasWord;
 import edu.stanford.nlp.ling.Label;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
+
+
 
 
 /**

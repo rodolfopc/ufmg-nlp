@@ -650,7 +650,7 @@ public abstract class TregexPattern implements Serializable {
     }
   }
 
-  private static TreeReaderFactory getTreeReaderFactory(String treeReaderFactoryClassName) {
+  public static TreeReaderFactory getTreeReaderFactory(String treeReaderFactoryClassName) {
     TreeReaderFactory trf = new TRegexTreeReaderFactory();
     if (treeReaderFactoryClassName != null) {
       try {
@@ -664,7 +664,7 @@ public abstract class TregexPattern implements Serializable {
 
   private static Treebank treebank; // used by main method, must be accessible
 
-  static class TRegexTreeVisitor implements TreeVisitor {
+  public static class TRegexTreeVisitor implements TreeVisitor {
 
     private static boolean printNumMatchesToStdOut = false;
     static boolean printNonMatchingTrees = false;
@@ -676,7 +676,7 @@ public abstract class TregexPattern implements Serializable {
     static boolean oneMatchPerRootNode = false;
     static boolean reportTreeNumbers = false;
 
-    static TreePrint tp;
+    public static TreePrint tp;
     PrintWriter pw;
 
     int treeNumber = 0;
@@ -685,7 +685,7 @@ public abstract class TregexPattern implements Serializable {
     String[] handles;
     int numMatches;
 
-    TRegexTreeVisitor(TregexPattern p, String[] handles, String encoding) {
+    public TRegexTreeVisitor(TregexPattern p, String[] handles, String encoding) {
       this.p = p;
       this.handles = handles;
       try {

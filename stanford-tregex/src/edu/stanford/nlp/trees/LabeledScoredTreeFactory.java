@@ -1,10 +1,14 @@
 package edu.stanford.nlp.trees;
 
+
+import java.util.List;
+
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.ling.Label;
 import edu.stanford.nlp.ling.LabelFactory;
 
-import java.util.List;
+
+
 
 /**
  * A <code>LabeledScoredTreeFactory</code> acts as a factory for creating

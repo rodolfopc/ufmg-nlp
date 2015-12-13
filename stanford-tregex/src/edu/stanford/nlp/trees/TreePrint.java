@@ -1,14 +1,16 @@
 package edu.stanford.nlp.trees;
 
+
+import java.io.*;
+import java.util.*;
+
 import edu.stanford.nlp.ling.*;
 import edu.stanford.nlp.ling.CoreAnnotations.CopyAnnotation;
 import edu.stanford.nlp.process.PTBTokenizer;
 import edu.stanford.nlp.trees.international.pennchinese.ChineseEnglishWordMap;
 import edu.stanford.nlp.util.*;
-import edu.stanford.nlp.util.XMLUtils;
 
-import java.io.*;
-import java.util.*;
+
 
 
 /**

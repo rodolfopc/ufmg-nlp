@@ -1,5 +1,9 @@
 package edu.stanford.nlp.ling;
 
+import edu.stanford.nlp.ling.CoreLabel;
+import edu.stanford.nlp.ling.CyclicCoreLabel;
+import edu.stanford.nlp.ling.Label;
+import edu.stanford.nlp.ling.LabelFactory;
 import edu.stanford.nlp.ling.CoreAnnotations.DocIDAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.IndexAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.SentenceIndexAnnotation;

@@ -2,9 +2,11 @@ package edu.stanford.nlp.parser.lexparser;
 
 import java.util.*;
 
-import edu.stanford.nlp.util.Index;
 import edu.stanford.nlp.stats.ClassicCounter;
 import edu.stanford.nlp.trees.Tree;
+import edu.stanford.nlp.util.Index;
+
+
 
 
 /** Gathers statistics on tree dependencies and then passes them to an

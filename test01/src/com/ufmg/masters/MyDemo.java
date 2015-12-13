@@ -1,6 +1,7 @@
 package com.ufmg.masters;
 
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
@@ -37,16 +38,16 @@ public class MyDemo {
 
 	public static void main(String[] args) throws IOException {
 
-		BufferedReader readTree = new BufferedReader(new FileReader("../arquivos/file.txt"));
+		BufferedReader readTree = new BufferedReader(new FileReader("/Users/rodolfopc/git/ufmg-qg/arquivos/file.txt"));
 		String tree = readTree.readLine();
 		while (tree != null) {
 		
-			BufferedReader gIn = new BufferedReader(new FileReader("../arquivos/qtregexTemplate_pt.txt"));
+			BufferedReader gIn = new BufferedReader(new FileReader("/Users/rodolfopc/git/ufmg-qg/arquivos/qtregexTemplate_pt.txt"));
 			String line = gIn.readLine();
 			List<Tree> trees = null;
 			boolean achouTregex = false;
 			String template = null;
-			while (line != null && template==null) {
+			while (line != null) {
 			    if(line.contains("#")){
 			    	line = line.replace("#", "");
 					trees = demoTregex(line, tree);
@@ -56,46 +57,13 @@ public class MyDemo {
 			    } else {
 			    	if(achouTregex) {
 			    		template = line;
+
+			    		generateQuestions(template, trees);
 			    	} 
 			    }
 			    line = gIn.readLine();
-				} 
-			gIn.close();
-	
-			if(trees!=null){
-				String pattern = "\\%\\%([A-Z]+)\\%\\%";
-	
-			      Pattern r = Pattern.compile(pattern);
-			      Matcher m = r.matcher(template);
-			      String expression = null;
-			      if (m.find( )) {
-			    	  expression = m.group(1);
-			      }
-			      
-				for (int i = 0; i < trees.size(); i++) {
-					Object[] array = trees.get(i).toArray();
-				      if(expression!=null){
-				    	  LabeledScoredTreeNode selectedNode = null;
-							for (int j = 0; j < array.length; j++) {
-								LabeledScoredTreeNode labeledScoredTreeNode = (LabeledScoredTreeNode) array[j];
-								Label label = labeledScoredTreeNode.label();
-								String value = label.value();
-								if(value.equals(expression)){
-									selectedNode = labeledScoredTreeNode;
-									break;
-								}
-							}
-							StringBuilder sb = new StringBuilder();
-
-							for (int j = 0; j < selectedNode.getLeaves().size(); j++) {
-								sb.append(selectedNode.getLeaves().get(j).value()+" ");
-							}
-							String pergunta = template.replace("%%"+expression+"%%", sb.toString());
-							System.out.print(pergunta+"\n");
-				      }
-				}
 			}
-			
+			gIn.close();
 
 			tree = readTree.readLine();
 		}
@@ -117,6 +85,105 @@ public class MyDemo {
 
 //		demoTregex(matchString, line);
 	}
+	
+	
+	
+	public static void generateQuestions(String template, List<Tree> trees){
+
+		
+		if(trees!=null && template!=null){
+			String patternConditions = "\\[\\.(\\D+)\\.\\]";
+			
+			String pattern = "\\%\\%([A-Z]+)\\%\\%";
+
+			String expression = patternMatcher(pattern, template);
+			String conditions = patternMatcher(patternConditions, template);
+		     
+			String[] a = template.split(patternConditions);
+			template = a[1];
+			
+		     String[] frases = new String[trees.size()];
+			for (int i = 0; i < trees.size(); i++) {
+				Object[] array = trees.get(i).toArray();
+
+				String[] phrase = new String[trees.get(i).getLeaves().size()];
+				StringBuilder st = new StringBuilder();
+				for (int x = 0; x < trees.get(i).getLeaves().size(); x++) {
+					phrase[x] = trees.get(i).getLeaves().get(x).value();
+					st.append(trees.get(i).getLeaves().get(x).value()+" ");
+				}
+				
+				if(checkConditions(conditions,phrase)){
+				
+				      if(expression!=null){
+				    	  LabeledScoredTreeNode selectedNode = null;
+							for (int j = 0; j < array.length; j++) {
+								LabeledScoredTreeNode labeledScoredTreeNode = (LabeledScoredTreeNode) array[j];
+								Label label = labeledScoredTreeNode.label();
+								String value = label.value();
+								if(value.equals(expression)){
+									selectedNode = labeledScoredTreeNode;
+									break;
+								}
+							}
+							StringBuilder sb = new StringBuilder();
+
+							for (int j = 0; j < selectedNode.getLeaves().size(); j++) {
+								sb.append(selectedNode.getLeaves().get(j).value()+" ");
+							}
+							frases[i] = sb.toString();
+							String pergunta = template.replace("%%"+expression+"%%", sb.toString());
+							System.out.print(pergunta+"\n");
+				      }
+				}
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	public static boolean checkConditions(String conditions, String[] phrase){
+		String[] separatedConditions = conditions.split(",");
+		boolean isValid = true;
+		for (int i = 0; i < separatedConditions.length; i++) {
+			if(separatedConditions[i].contains("entity")){
+				isValid = checkEntity(separatedConditions[i].split("=")[1], phrase);
+			}
+		}
+		
+		
+		return isValid;
+		
+	}
+	
+	public static boolean checkEntity(String entity, String[] phrase){
+
+		
+		EntityExtractor eex = new EntityExtractor();
+		String entityfound = eex.extract(phrase);
+		if(entityfound!=null){
+//			System.out.println(entityfound);
+			if(entityfound.contains(entity))
+				return true;
+		}
+		
+		return false;
+	}
+	
+	
+	public static String patternMatcher(String pattern,String text){
+
+	      Pattern r = Pattern.compile(pattern);
+	      Matcher m = r.matcher(text);
+	      String expression = null;
+	      if (m.find( )) {
+	    	  expression = m.group(1);
+	    	  return expression;
+	      }
+	      return null;
+	}
 
 	private static List<Tree> demoTregex(String matchString, String treesString) throws UnsupportedEncodingException {
 		String encoding = "UTF-8";
@@ -131,9 +198,9 @@ public class MyDemo {
 		Macros.addAllMacros(tpc, macroFilename, encoding);
 		TregexPattern tregexPattern = tpc.compile(matchString);
 		PrintWriter errPW = new PrintWriter(new OutputStreamWriter(System.err, encoding), true);
-		errPW.println("Pattern string:\n" + tregexPattern.pattern());
-		errPW.println("Parsed representation:");
-		tregexPattern.prettyPrint(errPW);
+//		errPW.println("Pattern string:\n" + tregexPattern.pattern());
+//		errPW.println("Parsed representation:");
+//		tregexPattern.prettyPrint(errPW);
 
 		String[] handles = null;
 		Treebank treebank;
@@ -149,13 +216,13 @@ public class MyDemo {
 		TRegexTreeVisitor vis = new TRegexTreeVisitor(tregexPattern, handles, encoding);
 
 		treebank.apply(vis);
-		System.out.println(treebank.textualSummary());
+//		System.out.println(treebank.textualSummary());
 		
-		errPW.println("There were " + vis.numMatches() + " matches in total.");
+//		errPW.println("There were " + vis.numMatches() + " matches in total.");
 		List<Tree> matchedTrees = vis.getMatchedSubTrees();
 		
 		for (Tree tree : matchedTrees) {
-			System.out.println(tree.nodeString());
+//			System.out.println(tree.nodeString());
 		}
 		return matchedTrees;
 	}

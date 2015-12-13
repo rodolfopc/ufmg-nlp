@@ -1,9 +1,11 @@
 package edu.stanford.nlp.trees.tregex;
 
-import edu.stanford.nlp.stats.IntCounter;
 
 import java.util.Map;
 import java.util.HashMap;
+
+import edu.stanford.nlp.stats.IntCounter;
+
 
 /** A class that takes care of the stuff necessary for variable strings.
  *

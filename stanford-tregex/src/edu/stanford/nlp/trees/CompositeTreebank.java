@@ -2,8 +2,8 @@ package edu.stanford.nlp.trees;
 
 import java.io.File;
 import java.io.FileFilter;
-import java.util.Iterator;
 import java.util.Collection;
+import java.util.Iterator;
 
 /**
  * @author Galen Andrew

@@ -31,13 +31,15 @@
 
 package edu.stanford.nlp.trees.international.pennchinese;
 
-import edu.stanford.nlp.trees.TreebankLanguagePack;
-import edu.stanford.nlp.util.StringUtils;
 
 import java.io.*;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import edu.stanford.nlp.trees.TreebankLanguagePack;
+import edu.stanford.nlp.util.StringUtils;
+
 
 /**
  * A class for mapping Chinese words to English.  Uses CEDict free Lexicon.

@@ -1,11 +1,11 @@
 package edu.stanford.nlp.trees.international.arabic;
 
-import edu.stanford.nlp.objectbank.TokenizerFactory;
-import edu.stanford.nlp.trees.*;
 import edu.stanford.nlp.international.arabic.ArabicMorphoFeatureSpecification;
 import edu.stanford.nlp.international.arabic.process.ArabicTokenizer;
 import edu.stanford.nlp.international.morph.MorphoFeatureSpecification;
 import edu.stanford.nlp.ling.HasWord;
+import edu.stanford.nlp.objectbank.TokenizerFactory;
+import edu.stanford.nlp.trees.*;
 
 /**
  * Specifies the treebank/language specific components needed for

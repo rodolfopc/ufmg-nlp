@@ -1,5 +1,11 @@
 package edu.stanford.nlp.ling;
 
+import edu.stanford.nlp.ling.HasOffset;
+import edu.stanford.nlp.ling.Label;
+import edu.stanford.nlp.ling.LabelFactory;
+import edu.stanford.nlp.ling.StringLabelFactory;
+import edu.stanford.nlp.ling.ValueLabel;
+
 /**
  * A <code>StringLabel</code> object acts as a Label by containing a
  * single String, which it sets or returns in response to requests.

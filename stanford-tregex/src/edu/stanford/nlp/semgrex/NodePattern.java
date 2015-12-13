@@ -14,6 +14,9 @@ import edu.stanford.nlp.ling.IndexedWord;
 import edu.stanford.nlp.trees.semgraph.SemanticGraph;
 import edu.stanford.nlp.util.Pair;
 
+
+
+
 public class NodePattern extends SemgrexPattern {
 
   private static final long serialVersionUID = -5981133879119233896L;

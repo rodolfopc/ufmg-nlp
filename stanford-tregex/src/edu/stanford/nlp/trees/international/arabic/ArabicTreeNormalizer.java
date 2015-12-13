@@ -15,6 +15,9 @@ import edu.stanford.nlp.trees.tregex.TregexMatcher;
 import edu.stanford.nlp.trees.tregex.TregexPattern;
 import edu.stanford.nlp.util.Filter;
 
+
+
+
 /**
  * Normalizes both terminals and non-terminals in Penn Arabic Treebank (ATB)
  * trees. Among the normalizations that can be performed:

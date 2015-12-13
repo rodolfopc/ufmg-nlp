@@ -1,9 +1,11 @@
 package edu.stanford.nlp.io;
 
+
+import java.io.*;
+
 import edu.stanford.nlp.util.ByteStreamGobbler;
 import edu.stanford.nlp.util.StreamGobbler;
 
-import java.io.*;
 
 /**
 * Opens a outputstream for writing into a bzip2 file by piping into the bzip2 command.

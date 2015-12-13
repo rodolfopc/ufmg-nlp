@@ -1,10 +1,12 @@
 package edu.stanford.nlp.parser.lexparser;
 
-import edu.stanford.nlp.trees.TreePrint;
-import edu.stanford.nlp.trees.TreebankLanguagePack;
 
 import java.io.Serializable;
 import java.util.Properties;
+
+import edu.stanford.nlp.trees.TreePrint;
+import edu.stanford.nlp.trees.TreebankLanguagePack;
+
 
 /**
  * Options to the parser which affect performance only at testing (parsing)

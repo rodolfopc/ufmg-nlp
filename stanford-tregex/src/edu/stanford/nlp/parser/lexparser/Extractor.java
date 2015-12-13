@@ -3,8 +3,10 @@ package edu.stanford.nlp.parser.lexparser;
 import java.util.Collection;
 import java.util.Iterator;
 
-import edu.stanford.nlp.util.Function;
 import edu.stanford.nlp.trees.Tree;
+import edu.stanford.nlp.util.Function;
+
+
 
 /**
  * @author grenager

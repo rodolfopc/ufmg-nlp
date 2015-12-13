@@ -98,7 +98,7 @@ public class TregexDemo {
 
 		if (args.length < 1) {
 			errPW.println(
-					"Usage: java edu.stanford.nlp.trees.tregex.TregexPattern [-T] [-C] [-w] [-f] [-o] [-n] [-s] [-filter]  [-hf class] [-trf class] [-h handle]* pattern [filepath]");
+					"Usage: java stanford.nlp.trees.tregex.TregexPattern [-T] [-C] [-w] [-f] [-o] [-n] [-s] [-filter]  [-hf class] [-trf class] [-h handle]* pattern [filepath]");
 			return;
 		}
 		String matchString = args[0];

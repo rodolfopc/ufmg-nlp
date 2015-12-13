@@ -1,18 +1,26 @@
 package edu.stanford.nlp.trees;
 
-import edu.stanford.nlp.io.ExtensionFileFilter;
-import edu.stanford.nlp.stats.ClassicCounter;
-import edu.stanford.nlp.stats.Counters;
-import edu.stanford.nlp.util.Sets;
-import edu.stanford.nlp.ling.Label;
-import edu.stanford.nlp.ling.StringLabel;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileFilter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.StringWriter;
+import java.io.Writer;
 import java.text.NumberFormat;
 import java.util.AbstractCollection;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
+
+import edu.stanford.nlp.io.ExtensionFileFilter;
+import edu.stanford.nlp.ling.Label;
+import edu.stanford.nlp.ling.StringLabel;
+import edu.stanford.nlp.stats.ClassicCounter;
+import edu.stanford.nlp.stats.Counters;
+import edu.stanford.nlp.util.Sets;
+
+
 
 
 /**

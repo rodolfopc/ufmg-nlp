@@ -3,6 +3,10 @@ package edu.stanford.nlp.util.logging;
 import java.io.*;
 import java.util.Locale;
 
+import edu.stanford.nlp.util.logging.Redwood;
+
+
+
 /**
  * A PrintStream that writes to Redwood logs.
  * The primary use of this class is to override System.out and System.err.

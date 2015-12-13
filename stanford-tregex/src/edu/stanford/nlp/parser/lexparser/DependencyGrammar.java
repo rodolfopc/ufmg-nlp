@@ -1,12 +1,14 @@
 package edu.stanford.nlp.parser.lexparser;
 
-import edu.stanford.nlp.trees.Tree;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.Serializable;
 import java.util.Collection;
+
+import edu.stanford.nlp.trees.Tree;
+
 
 /**
  * An interface for DependencyGrammars.

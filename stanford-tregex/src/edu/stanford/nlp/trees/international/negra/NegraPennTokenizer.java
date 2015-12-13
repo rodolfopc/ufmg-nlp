@@ -1,11 +1,13 @@
 package edu.stanford.nlp.trees.international.negra;
 
-import edu.stanford.nlp.process.LexerTokenizer;
-import edu.stanford.nlp.process.Tokenizer;
 
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.Reader;
+
+import edu.stanford.nlp.process.LexerTokenizer;
+import edu.stanford.nlp.process.Tokenizer;
+
 
 
 /**

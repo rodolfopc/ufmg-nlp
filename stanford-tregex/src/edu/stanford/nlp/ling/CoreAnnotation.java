@@ -1,5 +1,6 @@
 package edu.stanford.nlp.ling;
 
+import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.util.CoreMap;
 import edu.stanford.nlp.util.TypesafeMap;
 

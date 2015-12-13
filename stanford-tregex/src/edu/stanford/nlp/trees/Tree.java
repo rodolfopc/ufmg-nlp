@@ -7,7 +7,16 @@ import java.io.PrintWriter;
 import java.io.Serializable;
 import java.io.StringReader;
 import java.io.StringWriter;
-import java.util.*;
+import java.util.AbstractCollection;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.NoSuchElementException;
+import java.util.Set;
 
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.ling.HasIndex;
@@ -32,6 +41,9 @@ import edu.stanford.nlp.util.Pair;
 import edu.stanford.nlp.util.Scored;
 import edu.stanford.nlp.util.StringUtils;
 import edu.stanford.nlp.util.XMLUtils;
+
+
+
 
 /**
  * The abstract class <code>Tree</code> is used to collect all of the

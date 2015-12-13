@@ -1,17 +1,20 @@
 package edu.stanford.nlp.parser.lexparser;
 
-import edu.stanford.nlp.objectbank.TokenizerFactory;
-import edu.stanford.nlp.parser.metrics.AbstractEval;
-import edu.stanford.nlp.trees.*;
-import edu.stanford.nlp.ling.*;
-import edu.stanford.nlp.util.Filter;
-import edu.stanford.nlp.util.Function;
-import edu.stanford.nlp.util.Index;
 
 import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.io.Serializable;
 import java.util.List;
+
+import edu.stanford.nlp.ling.*;
+import edu.stanford.nlp.objectbank.TokenizerFactory;
+import edu.stanford.nlp.parser.metrics.AbstractEval;
+import edu.stanford.nlp.trees.*;
+import edu.stanford.nlp.util.Filter;
+import edu.stanford.nlp.util.Function;
+import edu.stanford.nlp.util.Index;
+
+
 
 
 /**

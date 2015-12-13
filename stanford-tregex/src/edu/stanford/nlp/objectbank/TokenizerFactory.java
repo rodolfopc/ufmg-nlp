@@ -1,8 +1,10 @@
 package edu.stanford.nlp.objectbank;
 
-import edu.stanford.nlp.process.Tokenizer;
 
 import java.io.Reader;
+
+import edu.stanford.nlp.process.Tokenizer;
+
 
 /**
  * A TokenizerFactory is used to convert a java.io.Reader

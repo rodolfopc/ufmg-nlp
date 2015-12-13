@@ -4,6 +4,8 @@ import java.io.IOException;
 
 import edu.stanford.nlp.util.Filter;
 
+
+
 /**
  * A <code>FilteringTreeReader</code> filters the output of another TreeReader.
  * It applies a Filter&lt;Tree&gt; to each returned tree and only returns trees 

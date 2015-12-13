@@ -1,10 +1,14 @@
 package edu.stanford.nlp.trees;
 
-import edu.stanford.nlp.ling.Label;
-import edu.stanford.nlp.ling.LabelFactory;
-import edu.stanford.nlp.ling.CyclicCoreLabel;
 
 import java.util.List;
+
+import edu.stanford.nlp.ling.CyclicCoreLabel;
+import edu.stanford.nlp.ling.Label;
+import edu.stanford.nlp.ling.LabelFactory;
+
+
+
 
 
 /**

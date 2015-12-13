@@ -1,13 +1,16 @@
 package edu.stanford.nlp.trees;
 
-import edu.stanford.nlp.util.Function;
-import edu.stanford.nlp.util.MutableInteger;
-import edu.stanford.nlp.util.StringUtils;
-import edu.stanford.nlp.ling.*;
-import edu.stanford.nlp.ling.CoreAnnotations.TagLabelAnnotation;
 
 import java.util.*;
 import java.io.*;
+
+import edu.stanford.nlp.ling.*;
+import edu.stanford.nlp.ling.CoreAnnotations.TagLabelAnnotation;
+import edu.stanford.nlp.util.Function;
+import edu.stanford.nlp.util.MutableInteger;
+import edu.stanford.nlp.util.StringUtils;
+
+
 
 /**
  * Various static utilities for the <code>Tree</code> class.

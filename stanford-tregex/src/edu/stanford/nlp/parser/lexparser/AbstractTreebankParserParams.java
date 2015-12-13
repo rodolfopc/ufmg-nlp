@@ -1,5 +1,14 @@
 package edu.stanford.nlp.parser.lexparser;
 
+
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
 import edu.stanford.nlp.ling.CategoryWordTag;
 import edu.stanford.nlp.ling.HasTag;
 import edu.stanford.nlp.ling.Label;
@@ -14,13 +23,7 @@ import edu.stanford.nlp.util.Filter;
 import edu.stanford.nlp.util.Function;
 import edu.stanford.nlp.util.Index;
 
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
-import java.io.PrintWriter;
-import java.io.UnsupportedEncodingException;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
+
 
 
 /**

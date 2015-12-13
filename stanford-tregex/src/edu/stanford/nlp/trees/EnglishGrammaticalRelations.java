@@ -1,14 +1,16 @@
 package edu.stanford.nlp.trees;
 
-import edu.stanford.nlp.trees.GrammaticalRelation.GrammaticalRelationAnnotation;
-import edu.stanford.nlp.trees.GrammaticalRelation.Language;
-import edu.stanford.nlp.util.Generics;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
+
+import edu.stanford.nlp.trees.GrammaticalRelation.GrammaticalRelationAnnotation;
+import edu.stanford.nlp.trees.GrammaticalRelation.Language;
+import edu.stanford.nlp.util.Generics;
+
 
 import static edu.stanford.nlp.trees.GrammaticalRelation.*;
 

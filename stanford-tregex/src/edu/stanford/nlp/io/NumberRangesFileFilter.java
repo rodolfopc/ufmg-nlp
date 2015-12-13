@@ -1,12 +1,14 @@
 package edu.stanford.nlp.io;
 
-import edu.stanford.nlp.util.Pair;
 
 import java.io.File;
 import java.io.FileFilter;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+
+import edu.stanford.nlp.util.Pair;
+
 
 /**
  * Implements a file filter that examines a number in a filename to

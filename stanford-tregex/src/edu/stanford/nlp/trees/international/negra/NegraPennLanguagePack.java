@@ -4,8 +4,8 @@ import edu.stanford.nlp.ling.Word;
 import edu.stanford.nlp.objectbank.TokenizerFactory;
 import edu.stanford.nlp.process.PTBTokenizer;
 import edu.stanford.nlp.trees.AbstractTreebankLanguagePack;
-import edu.stanford.nlp.trees.TreeReaderFactory;
 import edu.stanford.nlp.trees.HeadFinder;
+import edu.stanford.nlp.trees.TreeReaderFactory;
 
 /**
  * Language pack for Negra and Tiger treebanks <em>after</em> conversion to

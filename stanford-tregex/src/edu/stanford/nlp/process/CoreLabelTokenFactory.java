@@ -2,9 +2,13 @@ package edu.stanford.nlp.process;
 
 import java.io.Serializable;
 
+import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.ling.CoreAnnotations.CharacterOffsetBeginAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.CharacterOffsetEndAnnotation;
-import edu.stanford.nlp.ling.CoreLabel;
+
+
+
+
 
 /**
  * Constructs {@link CoreLabel}s from Strings optionally with

@@ -4,6 +4,17 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import edu.stanford.nlp.ling.CoreLabel;
+import edu.stanford.nlp.ling.HasWord;
+import edu.stanford.nlp.ling.Label;
+import edu.stanford.nlp.ling.LabeledWord;
+import edu.stanford.nlp.ling.TaggedWord;
+import edu.stanford.nlp.ling.Word;
+import edu.stanford.nlp.ling.WordLemmaTag;
+import edu.stanford.nlp.ling.WordTag;
+
+
+
 /**
  * Sentence holds a couple utility methods for lists.
  * Those include a method that nicely prints a list and methods that

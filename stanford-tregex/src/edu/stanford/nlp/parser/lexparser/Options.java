@@ -1,13 +1,15 @@
 package edu.stanford.nlp.parser.lexparser;
 
+
+import java.io.*;
+import java.util.*;
+
 import edu.stanford.nlp.trees.TreebankLanguagePack;
 import edu.stanford.nlp.util.ErasureUtils;
 import edu.stanford.nlp.util.Function;
 import edu.stanford.nlp.util.ReflectionLoading;
 import edu.stanford.nlp.util.StringUtils;
 
-import java.io.*;
-import java.util.*;
 
 
 /**

@@ -4,9 +4,12 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.NoSuchElementException;
 
-import edu.stanford.nlp.process.Tokenizer;
 import edu.stanford.nlp.ling.HasIndex;
 import edu.stanford.nlp.ling.HasWord;
+import edu.stanford.nlp.process.Tokenizer;
+
+
+
 
 /**
  * This class implements the <code>TreeReader</code> interface to read Penn Treebank-style

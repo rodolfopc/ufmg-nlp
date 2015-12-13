@@ -1,5 +1,7 @@
 package edu.stanford.nlp.ling;
 
+import edu.stanford.nlp.ling.Label;
+
 
 /**
  * A <code>LabelFactory</code> object acts as a factory for creating

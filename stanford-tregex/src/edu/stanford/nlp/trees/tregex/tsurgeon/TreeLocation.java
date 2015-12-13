@@ -1,11 +1,13 @@
 package edu.stanford.nlp.trees.tregex.tsurgeon;
 
+
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
+
 import edu.stanford.nlp.trees.Tree;
 import edu.stanford.nlp.trees.tregex.TregexMatcher;
 import edu.stanford.nlp.util.Pair;
 
-import java.util.regex.Pattern;
-import java.util.regex.Matcher;
 
 /**
  * @author Roger Levy

@@ -1,9 +1,13 @@
 package edu.stanford.nlp.trees;
 
+
+import java.io.Reader;
+
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.ling.LabelFactory;
 
-import java.io.Reader;
+
+
 
 /**
  * This class implements a <code>TreeReaderFactory</code> that produces

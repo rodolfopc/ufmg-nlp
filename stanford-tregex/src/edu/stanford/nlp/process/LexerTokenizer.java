@@ -1,13 +1,17 @@
 package edu.stanford.nlp.process;
 
 
-import edu.stanford.nlp.io.Lexer;
-import edu.stanford.nlp.io.RuntimeIOException;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.Reader;
+
+import edu.stanford.nlp.io.Lexer;
+import edu.stanford.nlp.io.RuntimeIOException;
+
+
+
 
 
 /**

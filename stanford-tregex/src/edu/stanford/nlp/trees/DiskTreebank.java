@@ -1,10 +1,26 @@
 package edu.stanford.nlp.trees;
 
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileFilter;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.zip.GZIPInputStream;
 
 import edu.stanford.nlp.ling.HasIndex;
+
+
+
+
 
 /**
  * A <code>DiskTreebank</code> is a <code>Collection</code> of

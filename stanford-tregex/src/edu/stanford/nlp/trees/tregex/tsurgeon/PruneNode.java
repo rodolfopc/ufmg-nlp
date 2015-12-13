@@ -1,9 +1,11 @@
 package edu.stanford.nlp.trees.tregex.tsurgeon;
 
 import java.util.List;
+
 import edu.stanford.nlp.trees.Tree;
 import edu.stanford.nlp.trees.Trees;
 import edu.stanford.nlp.trees.tregex.TregexMatcher;
+
 
 /**  Pruning differs from deleting in that if a non-terminal node winds up having no children, it is pruned as well.
  * @author Roger Levy (rog@nlp.stanford.edu)

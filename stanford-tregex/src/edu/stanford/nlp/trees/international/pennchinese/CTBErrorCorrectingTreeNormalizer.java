@@ -3,13 +3,16 @@ package edu.stanford.nlp.trees.international.pennchinese;
 import java.util.regex.Pattern;
 import java.util.*;
 
+import edu.stanford.nlp.io.EncodingPrintWriter;
+import edu.stanford.nlp.ling.Label;
 import edu.stanford.nlp.trees.BobChrisTreeNormalizer;
 import edu.stanford.nlp.trees.Tree;
 import edu.stanford.nlp.trees.TreeFactory;
 import edu.stanford.nlp.trees.TreeTransformer;
 import edu.stanford.nlp.util.Filter;
-import edu.stanford.nlp.ling.Label;
-import edu.stanford.nlp.io.EncodingPrintWriter;
+
+
+
 
 
 /**

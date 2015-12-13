@@ -2,14 +2,16 @@
 package edu.stanford.nlp.trees.tregex;
 // all generated classes are in this package
 
-import edu.stanford.nlp.util.Function;
-import edu.stanford.nlp.util.Pair;
-import edu.stanford.nlp.trees.HeadFinder;
 import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+
+import edu.stanford.nlp.trees.HeadFinder;
+import edu.stanford.nlp.util.Function;
+import edu.stanford.nlp.util.Pair;
+
 
 /** Token Manager. */
 class TregexParserTokenManager implements TregexParserConstants

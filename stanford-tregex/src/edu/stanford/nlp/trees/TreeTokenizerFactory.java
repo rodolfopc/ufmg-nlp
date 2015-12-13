@@ -1,12 +1,14 @@
 package edu.stanford.nlp.trees;
 
-import edu.stanford.nlp.objectbank.TokenizerFactory;
-import edu.stanford.nlp.process.Tokenizer;
-import edu.stanford.nlp.process.AbstractTokenizer;
 
 import java.io.Reader;
 import java.io.IOException;
 import java.util.Iterator;
+
+import edu.stanford.nlp.objectbank.TokenizerFactory;
+import edu.stanford.nlp.process.AbstractTokenizer;
+import edu.stanford.nlp.process.Tokenizer;
+
 
 /** Wrapper for TreeReaderFactory.  Any IOException in the readTree() method
  *  of the TreeReader will result in a null

@@ -1,10 +1,13 @@
 package edu.stanford.nlp.parser.lexparser;
 
+
+import java.io.Serializable;
+
 import edu.stanford.nlp.ling.TaggedWord;
 import edu.stanford.nlp.util.Index;
 import edu.stanford.nlp.util.StringUtils;
 
-import java.io.Serializable;
+
 
 /** Represents a WordTag (in the sense that equality is defined
  *  on both components), where each half is represented by an

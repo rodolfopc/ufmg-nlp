@@ -3,20 +3,20 @@ package edu.stanford.nlp.ling;
 import java.util.HashMap;
 import java.util.Map;
 
+import edu.stanford.nlp.ling.CoreAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.AfterAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.AnswerAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ArgumentAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.BeforeAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.CharacterOffsetBeginAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.CategoryAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.CategoryFunctionalTagAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.CharacterOffsetBeginAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.CharacterOffsetEndAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ChineseCharAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ChineseOrigSegAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ChineseSegAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ChunkAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.OriginalTextAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.DocIDAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.CharacterOffsetEndAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.FeaturesAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.GazetteerAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.GoldAnswerAnnotation;
@@ -32,7 +32,9 @@ import edu.stanford.nlp.ling.CoreAnnotations.MorphoNumAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.MorphoPersAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.NamedEntityTagAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.NormalizedNamedEntityTagAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.OriginalTextAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ParentAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.PartOfSpeechAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.PolarityAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ProjectedCategoryAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ProtoAnnotation;
@@ -43,13 +45,15 @@ import edu.stanford.nlp.ling.CoreAnnotations.SentenceIndexAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ShapeAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.SpanAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.StemAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.PartOfSpeechAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.TextAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ValueAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.VerbSenseAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.WordnetSynAnnotation;
 import edu.stanford.nlp.ling.CoreLabel.GenericAnnotation;
 import edu.stanford.nlp.util.ErasureUtils;
+
+
+
 
 /** @author Anna Rafferty */
 public class AnnotationLookup {

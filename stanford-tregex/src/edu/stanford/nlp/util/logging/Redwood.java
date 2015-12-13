@@ -1,18 +1,33 @@
 package edu.stanford.nlp.util.logging;
 
-import edu.stanford.nlp.io.IOUtils;
-import edu.stanford.nlp.util.ArrayIterable;
 
 import java.io.IOException;
 import java.io.PrintStream;
 import java.io.PrintWriter;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.Formatter;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Queue;
+import java.util.Set;
+import java.util.Stack;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.ReentrantLock;
+
+import edu.stanford.nlp.io.IOUtils;
+import edu.stanford.nlp.util.ArrayIterable;
+
+
 
 /**
  * A hierarchical channel based logger. Log messages are arranged hierarchically by depth

@@ -1,8 +1,12 @@
 package edu.stanford.nlp.trees;
 
-import edu.stanford.nlp.ling.CategoryWordTag;
 
 import java.util.HashMap;
+
+import edu.stanford.nlp.ling.CategoryWordTag;
+
+
+
 
 /**
  * Implements the HeadFinder found in Michael Collins' 1999 thesis.

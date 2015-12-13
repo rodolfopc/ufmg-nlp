@@ -1,5 +1,13 @@
 package edu.stanford.nlp.ling;
 
+import edu.stanford.nlp.ling.CategoryWordTagFactory;
+import edu.stanford.nlp.ling.HasCategory;
+import edu.stanford.nlp.ling.HasTag;
+import edu.stanford.nlp.ling.HasWord;
+import edu.stanford.nlp.ling.Label;
+import edu.stanford.nlp.ling.LabelFactory;
+import edu.stanford.nlp.ling.StringLabel;
+
 
 /**
  * A <code>CategoryWordTag</code> object acts as a complex Label

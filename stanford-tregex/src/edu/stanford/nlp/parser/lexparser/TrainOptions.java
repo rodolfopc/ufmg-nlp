@@ -1,11 +1,14 @@
 package edu.stanford.nlp.parser.lexparser;
 
-import edu.stanford.nlp.trees.Tree;
-import edu.stanford.nlp.ling.CategoryWordTag;
 
 import java.util.Set;
 import java.io.PrintWriter;
 import java.io.Serializable;
+
+import edu.stanford.nlp.ling.CategoryWordTag;
+import edu.stanford.nlp.trees.Tree;
+
+
 
 
 /**

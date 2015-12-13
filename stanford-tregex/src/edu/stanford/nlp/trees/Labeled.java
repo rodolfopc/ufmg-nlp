@@ -1,8 +1,12 @@
 package edu.stanford.nlp.trees;
 
-import edu.stanford.nlp.ling.Label;
 
 import java.util.Collection;
+
+import edu.stanford.nlp.ling.Label;
+
+
+
 
 /**
  * Interface for Objects which have a <code>Label</code>.

@@ -1,13 +1,6 @@
 package edu.stanford.nlp.trees;
 
 
-import edu.stanford.nlp.ling.LabelFactory;
-import edu.stanford.nlp.trees.tregex.TregexPattern;
-import edu.stanford.nlp.trees.tregex.tsurgeon.Tsurgeon;
-import edu.stanford.nlp.trees.tregex.tsurgeon.TsurgeonPattern;
-import edu.stanford.nlp.util.Generics;
-import edu.stanford.nlp.util.Pair;
-import edu.stanford.nlp.util.StringUtils;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -16,6 +9,16 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
+
+import edu.stanford.nlp.ling.LabelFactory;
+import edu.stanford.nlp.trees.tregex.TregexPattern;
+import edu.stanford.nlp.trees.tregex.tsurgeon.Tsurgeon;
+import edu.stanford.nlp.trees.tregex.tsurgeon.TsurgeonPattern;
+import edu.stanford.nlp.util.Generics;
+import edu.stanford.nlp.util.Pair;
+import edu.stanford.nlp.util.StringUtils;
+
+
 
 /**
  * Coordination transformer transforms a PennTreebank tree containing a coordination in a flat structure

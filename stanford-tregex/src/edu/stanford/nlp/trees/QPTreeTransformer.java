@@ -2,8 +2,6 @@ package edu.stanford.nlp.trees;
 
 
 
-import edu.stanford.nlp.ling.LabelFactory;
-import edu.stanford.nlp.util.StringUtils;
 
 import java.util.List;
 import java.util.Properties;
@@ -11,6 +9,11 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.FileInputStream;
 import java.io.IOException;
+
+import edu.stanford.nlp.ling.LabelFactory;
+import edu.stanford.nlp.util.StringUtils;
+
+
 
 /**
  * Transforms an English structure parse tree in order to get the dependencies right:

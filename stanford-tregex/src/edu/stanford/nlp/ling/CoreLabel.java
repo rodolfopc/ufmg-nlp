@@ -3,21 +3,36 @@ package edu.stanford.nlp.ling;
 import java.util.HashMap;
 import java.util.Set;
 
+import edu.stanford.nlp.ling.AnnotationLookup;
+import edu.stanford.nlp.ling.CoreAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations;
+import edu.stanford.nlp.ling.CoreLabel;
+import edu.stanford.nlp.ling.HasCategory;
+import edu.stanford.nlp.ling.HasContext;
+import edu.stanford.nlp.ling.HasIndex;
+import edu.stanford.nlp.ling.HasOffset;
+import edu.stanford.nlp.ling.HasTag;
+import edu.stanford.nlp.ling.HasWord;
+import edu.stanford.nlp.ling.Label;
+import edu.stanford.nlp.ling.LabelFactory;
 import edu.stanford.nlp.ling.AnnotationLookup.KeyLookup;
 import edu.stanford.nlp.ling.CoreAnnotations.AfterAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.BeforeAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.CategoryAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.OriginalTextAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.DocIDAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.IndexAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.LemmaAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.NamedEntityTagAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.SentenceIndexAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.OriginalTextAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.PartOfSpeechAnnotation;
+import edu.stanford.nlp.ling.CoreAnnotations.SentenceIndexAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.TextAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ValueAnnotation;
 import edu.stanford.nlp.util.ArrayCoreMap;
 import edu.stanford.nlp.util.CoreMap;
+
+
+
 
 
 /**

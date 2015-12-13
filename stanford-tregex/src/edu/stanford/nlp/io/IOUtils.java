@@ -1,6 +1,5 @@
 package edu.stanford.nlp.io;
 
-import edu.stanford.nlp.util.*;
 
 import java.io.*;
 import java.lang.reflect.InvocationTargetException;
@@ -12,6 +11,13 @@ import java.util.*;
 import java.util.regex.Pattern;
 import java.util.zip.GZIPInputStream;
 import java.util.zip.GZIPOutputStream;
+
+import edu.stanford.nlp.io.BZip2PipedOutputStream;
+import edu.stanford.nlp.io.EncodingFileReader;
+import edu.stanford.nlp.io.IOUtils;
+import edu.stanford.nlp.io.RuntimeIOException;
+import edu.stanford.nlp.util.*;
+
 
 /**
  * Helper Class for storing serialized objects to disk.

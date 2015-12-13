@@ -1,9 +1,13 @@
 package edu.stanford.nlp.util;
 
-import edu.stanford.nlp.io.ExtensionFileFilter;
 
 import java.io.File;
 import java.io.FileFilter;
+
+import edu.stanford.nlp.io.ExtensionFileFilter;
+
+
+
 
 /**
  * The <code>FilePathProcessor</code> traverses a directory structure and

@@ -1,14 +1,17 @@
 package edu.stanford.nlp.trees;
 
+
+import java.io.Serializable;
+import java.util.*;
+import java.util.regex.Pattern;
+
 import edu.stanford.nlp.ling.CoreAnnotation;
 import edu.stanford.nlp.trees.tregex.TregexMatcher;
 import edu.stanford.nlp.trees.tregex.TregexPattern;
 import edu.stanford.nlp.util.Generics;
 import edu.stanford.nlp.util.StringUtils;
 
-import java.io.Serializable;
-import java.util.*;
-import java.util.regex.Pattern;
+
 
 
 /**

@@ -2,9 +2,11 @@
 package edu.stanford.nlp.trees.tregex.tsurgeon;
 
 import java.io.StringReader;
+import java.util.*;
+
 import edu.stanford.nlp.trees.*;
 import edu.stanford.nlp.util.Pair;
-import java.util.*;
+
 
 
 class TsurgeonParser/*@bgen(jjtree)*/implements TsurgeonParserTreeConstants, TsurgeonParserConstants {/*@bgen(jjtree)*/

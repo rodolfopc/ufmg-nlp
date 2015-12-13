@@ -1,10 +1,13 @@
 package edu.stanford.nlp.semgrex;
 
-import edu.stanford.nlp.trees.semgraph.SemanticGraph;
-import edu.stanford.nlp.ling.*;
 
 
 import java.util.*;
+
+import edu.stanford.nlp.ling.*;
+import edu.stanford.nlp.trees.semgraph.SemanticGraph;
+
+
 
 /**
  * A <code>SemgrexMatcher</code> can be used to match a {@link SemgrexPattern}

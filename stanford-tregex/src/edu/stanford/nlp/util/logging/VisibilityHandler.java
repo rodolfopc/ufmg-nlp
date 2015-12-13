@@ -6,6 +6,8 @@ import java.util.List;
 
 import edu.stanford.nlp.util.logging.Redwood.Record;
 
+
+
 /**
  * A filter for selecting which channels are visible. This class
  * behaves as an "or" filter; that is, if any of the filters are considered

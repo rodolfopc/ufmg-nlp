@@ -1,10 +1,12 @@
 package edu.stanford.nlp.trees.tregex.tsurgeon;
 
-import edu.stanford.nlp.trees.Tree;
-import edu.stanford.nlp.trees.tregex.TregexMatcher;
 
 import java.util.Map;
 import java.util.HashMap;
+
+import edu.stanford.nlp.trees.Tree;
+import edu.stanford.nlp.trees.tregex.TregexMatcher;
+
 
 /**
  * @author Roger Levy (rog@nlp.stanford.edu)

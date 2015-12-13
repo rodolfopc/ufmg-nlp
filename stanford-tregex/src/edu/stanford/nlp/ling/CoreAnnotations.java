@@ -5,11 +5,17 @@ import java.util.List;
 import java.util.Map;
 import java.util.SortedSet;
 
+import edu.stanford.nlp.ling.CoreAnnotation;
+import edu.stanford.nlp.ling.CoreLabel;
+import edu.stanford.nlp.ling.Label;
+import edu.stanford.nlp.ling.WordLemmaTag;
 import edu.stanford.nlp.util.CoreMap;
 import edu.stanford.nlp.util.ErasureUtils;
 import edu.stanford.nlp.util.IntPair;
 import edu.stanford.nlp.util.Pair;
 import edu.stanford.nlp.util.Triple;
+
+
 
 /**
  * <p>

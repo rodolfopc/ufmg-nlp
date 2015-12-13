@@ -1,10 +1,13 @@
 package edu.stanford.nlp.trees.international.pennchinese;
 
+
+import java.io.*;
+
 import edu.stanford.nlp.io.EncodingPrintWriter;
 import edu.stanford.nlp.process.AbstractTokenizer;
 import edu.stanford.nlp.process.Tokenizer;
 
-import java.io.*;
+
 
 /**
  * A simple tokenizer for tokenizing Penn Chinese Treebank files.  A

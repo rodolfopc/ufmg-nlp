@@ -2,8 +2,10 @@ package edu.stanford.nlp.parser;
 
 import java.util.*;
 
-import edu.stanford.nlp.util.ScoredObject;
 import edu.stanford.nlp.trees.Tree;
+import edu.stanford.nlp.util.ScoredObject;
+
+
 
 
 /** An interface that supports finding k best and/or k good

@@ -1,11 +1,13 @@
 package edu.stanford.nlp.trees.tregex;
 
-import edu.stanford.nlp.trees.Tree;
 
 import java.util.Iterator;
 import java.util.List;
 import java.util.IdentityHashMap;
 import java.util.Map;
+
+import edu.stanford.nlp.trees.Tree;
+
 
 class CoordinationPattern extends TregexPattern {
 

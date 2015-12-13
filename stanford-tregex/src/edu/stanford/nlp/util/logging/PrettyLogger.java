@@ -1,8 +1,12 @@
 package edu.stanford.nlp.util.logging;
 
-import edu.stanford.nlp.util.logging.Redwood.RedwoodChannels;
 
 import java.util.*;
+
+import edu.stanford.nlp.util.logging.PrettyLoggable;
+import edu.stanford.nlp.util.logging.Redwood;
+import edu.stanford.nlp.util.logging.Redwood.RedwoodChannels;
+
 
 /**
  * Primarily for debugging, PrettyLogger helps you dump various collection

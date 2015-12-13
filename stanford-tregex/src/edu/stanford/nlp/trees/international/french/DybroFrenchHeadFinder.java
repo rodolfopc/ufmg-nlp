@@ -1,9 +1,12 @@
 package edu.stanford.nlp.trees.international.french;
 
+
+import java.util.HashMap;
+
 import edu.stanford.nlp.ling.CategoryWordTag;
 import edu.stanford.nlp.trees.*;
 
-import java.util.HashMap;
+
 
 /**
  * Implements the head finding rules from Dybro-Johansen master's thesis.

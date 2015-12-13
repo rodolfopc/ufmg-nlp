@@ -3,6 +3,7 @@ package com.ufmg.masters.parser;
 import java.util.Collection;
 import java.util.List;
 
+
 import edu.stanford.nlp.ling.HasWord;
 import edu.stanford.nlp.parser.lexparser.LexicalizedParser;
 import edu.stanford.nlp.process.DocumentPreprocessor;

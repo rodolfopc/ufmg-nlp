@@ -1,15 +1,10 @@
 package edu.stanford.nlp.parser.lexparser;
 
-import edu.stanford.nlp.trees.Tree;
-import edu.stanford.nlp.trees.TreebankLanguagePack;
-import edu.stanford.nlp.util.HashIndex;
-import edu.stanford.nlp.util.Index;
-import edu.stanford.nlp.util.Interner;
 
-import static edu.stanford.nlp.parser.lexparser.IntTaggedWord.ANY_WORD_INT;
 import static edu.stanford.nlp.parser.lexparser.IntTaggedWord.ANY_TAG_INT;
-import static edu.stanford.nlp.parser.lexparser.IntTaggedWord.STOP_WORD_INT;
+import static edu.stanford.nlp.parser.lexparser.IntTaggedWord.ANY_WORD_INT;
 import static edu.stanford.nlp.parser.lexparser.IntTaggedWord.STOP_TAG_INT;
+import static edu.stanford.nlp.parser.lexparser.IntTaggedWord.STOP_WORD_INT;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -18,6 +13,13 @@ import java.io.ObjectInputStream;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
+
+import edu.stanford.nlp.trees.Tree;
+import edu.stanford.nlp.trees.TreebankLanguagePack;
+import edu.stanford.nlp.util.HashIndex;
+import edu.stanford.nlp.util.Index;
+import edu.stanford.nlp.util.Interner;
+
 
 /**
  * An abstract base class for dependency grammars.  The only thing you have

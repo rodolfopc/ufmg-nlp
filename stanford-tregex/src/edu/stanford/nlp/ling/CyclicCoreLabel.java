@@ -4,12 +4,20 @@ import java.util.Comparator;
 import java.util.Map;
 import java.util.TreeMap;
 
+import edu.stanford.nlp.ling.CoreAnnotation;
+import edu.stanford.nlp.ling.CoreLabel;
+import edu.stanford.nlp.ling.CyclicCoreLabel;
+import edu.stanford.nlp.ling.Label;
+import edu.stanford.nlp.ling.LabelFactory;
 import edu.stanford.nlp.ling.CoreAnnotations.CopyAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.IndexAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.TextAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.ValueAnnotation;
 import edu.stanford.nlp.util.CoreMap;
 import edu.stanford.nlp.util.StringUtils;
+
+
+
 
 /**
  * Version of CoreLabel that allows for cycles in values/keys.

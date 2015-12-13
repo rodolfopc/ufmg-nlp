@@ -1,5 +1,7 @@
 package edu.stanford.nlp.ling;
 
+import edu.stanford.nlp.ling.LabelFactory;
+
 /**
  * Something that implements the <code>Label</code> interface can act as a
  * constituent, node, or word label with linguistic attributes.

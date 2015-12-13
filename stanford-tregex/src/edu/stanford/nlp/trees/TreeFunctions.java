@@ -1,5 +1,12 @@
 package edu.stanford.nlp.trees;
 
+
+import java.io.IOException;
+import java.io.StringReader;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 import edu.stanford.nlp.ling.CategoryWordTag;
 import edu.stanford.nlp.ling.CategoryWordTagFactory;
 import edu.stanford.nlp.ling.CoreLabel;
@@ -7,11 +14,7 @@ import edu.stanford.nlp.ling.StringLabel;
 import edu.stanford.nlp.ling.StringLabelFactory;
 import edu.stanford.nlp.util.Function;
 
-import java.io.IOException;
-import java.io.StringReader;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+
 
 /**
  * This is a utility class which vends tree transformers to translate

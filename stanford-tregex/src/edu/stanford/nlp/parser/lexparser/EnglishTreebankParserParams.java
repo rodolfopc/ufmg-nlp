@@ -1,11 +1,5 @@
 package edu.stanford.nlp.parser.lexparser;
 
-import edu.stanford.nlp.io.RuntimeIOException;
-import edu.stanford.nlp.ling.*;
-import edu.stanford.nlp.trees.*;
-import edu.stanford.nlp.util.Filter;
-import edu.stanford.nlp.util.Function;
-import edu.stanford.nlp.util.Index;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -13,6 +7,15 @@ import java.io.PrintWriter;
 import java.io.Reader;
 import java.io.Serializable;
 import java.util.*;
+
+import edu.stanford.nlp.io.RuntimeIOException;
+import edu.stanford.nlp.ling.*;
+import edu.stanford.nlp.trees.*;
+import edu.stanford.nlp.util.Filter;
+import edu.stanford.nlp.util.Function;
+import edu.stanford.nlp.util.Index;
+
+
 
 /**
  * Parser parameters for the Penn English Treebank (WSJ, Brown, Switchboard).

@@ -1,10 +1,13 @@
 package edu.stanford.nlp.trees.semgraph;
 
 //import edu.stanford.nlp.ling.IndexedFeatureLabel;
+
+import java.util.*;
+
 import edu.stanford.nlp.ling.IndexedWord;
 import edu.stanford.nlp.util.StringUtils;
 
-import java.util.*;
+
 
 /**
  * Defines a class for pretty-printing SemanticGraphs.

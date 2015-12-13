@@ -13,6 +13,9 @@ import edu.stanford.nlp.ling.CoreAnnotations.OriginalTextAnnotation;
 import edu.stanford.nlp.process.LexedTokenFactory;
 import edu.stanford.nlp.util.PropertiesUtils;
 
+
+
+
 /**
  * Tokenizer for UTF-8 Arabic. Supports raw text and both sections
  * (vocalized and unvocalized) of the ATB.

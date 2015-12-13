@@ -1,11 +1,14 @@
 package edu.stanford.nlp.parser.ui;
 
+
+import javax.swing.*;
+
 import edu.stanford.nlp.ling.StringLabelFactory;
 import edu.stanford.nlp.trees.LabeledScoredTreeFactory;
 import edu.stanford.nlp.trees.PennTreeReader;
 import edu.stanford.nlp.trees.Tree;
 
-import javax.swing.*;
+
 
 import java.awt.*;
 import java.awt.event.WindowAdapter;

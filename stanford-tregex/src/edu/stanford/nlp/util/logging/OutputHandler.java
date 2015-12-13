@@ -1,8 +1,14 @@
 package edu.stanford.nlp.util.logging;
 
-import edu.stanford.nlp.util.logging.Redwood.Record;
 
 import java.util.*;
+
+import edu.stanford.nlp.util.logging.Color;
+import edu.stanford.nlp.util.logging.LogRecordHandler;
+import edu.stanford.nlp.util.logging.Redwood;
+import edu.stanford.nlp.util.logging.Style;
+import edu.stanford.nlp.util.logging.Redwood.Record;
+
 
 /**
  * An abstract handler incorporating the logic of outputing a log message,

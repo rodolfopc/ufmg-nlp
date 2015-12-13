@@ -1,13 +1,31 @@
 package edu.stanford.nlp.trees;
 
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileFilter;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+import java.util.Map;
 
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.ling.HasIndex;
-import edu.stanford.nlp.util.*;
 import edu.stanford.nlp.objectbank.ObjectBank;
+import edu.stanford.nlp.util.CollectionValuedMap;
+import edu.stanford.nlp.util.FilePathProcessor;
+import edu.stanford.nlp.util.FileProcessor;
+import edu.stanford.nlp.util.Timing;
+
+
+
 
 
 /**

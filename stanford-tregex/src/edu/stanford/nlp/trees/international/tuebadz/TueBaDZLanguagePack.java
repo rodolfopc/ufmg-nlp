@@ -1,9 +1,9 @@
 package edu.stanford.nlp.trees.international.tuebadz;
 
 import edu.stanford.nlp.trees.AbstractTreebankLanguagePack;
-import edu.stanford.nlp.trees.TreebankLanguagePack;
-import edu.stanford.nlp.trees.TreeReaderFactory;
 import edu.stanford.nlp.trees.HeadFinder;
+import edu.stanford.nlp.trees.TreeReaderFactory;
+import edu.stanford.nlp.trees.TreebankLanguagePack;
 
 
 /** Language pack for the Tuebingen Treebank of Written German (TueBa-D/Z).

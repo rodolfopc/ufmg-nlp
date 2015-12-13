@@ -3,8 +3,11 @@ package edu.stanford.nlp.semgrex;
 import java.io.*;
 import java.util.*;
 
-import edu.stanford.nlp.trees.semgraph.SemanticGraph;
 import edu.stanford.nlp.ling.*;
+import edu.stanford.nlp.trees.semgraph.SemanticGraph;
+
+
+
 
 /**
  * A SemgrexPattern is a <code>tgrep</code>-type pattern for matching node

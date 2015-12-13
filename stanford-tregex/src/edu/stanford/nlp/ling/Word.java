@@ -1,5 +1,12 @@
 package edu.stanford.nlp.ling;
 
+import edu.stanford.nlp.ling.HasWord;
+import edu.stanford.nlp.ling.Label;
+import edu.stanford.nlp.ling.LabelFactory;
+import edu.stanford.nlp.ling.StringLabel;
+import edu.stanford.nlp.ling.Word;
+import edu.stanford.nlp.ling.WordFactory;
+
 
 /**
  * A <code>Word</code> object acts as a Label by containing a String.

@@ -1,6 +1,13 @@
 package edu.stanford.nlp.util;
 
-import java.util.*;
+import java.util.AbstractMap;
+import java.util.AbstractSet;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Random;
+import java.util.Set;
 
 /**
  * A Map which wraps an original Map, and only stores the changes (deltas) from
