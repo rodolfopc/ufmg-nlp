@@ -124,22 +124,23 @@ public class EntityExtractor {
 			for (int j = 0; j < entities.size(); j++) {
 				if(entities.get(j).getEM()!=null){
 					if (entities.get(j).getEM().equals(palavras[i])) {
-						palavrasEntity.put(palavras[i], entities.get(j).getCATEG());
+						return palavras[i];
+//						palavrasEntity.put(palavras[i], entities.get(j).getCATEG());
 					}
 				}
 			}
 		}
-		int i = 0;
-		StringBuilder sb = new StringBuilder();
-		while (i<palavras.length) {
-			if(entities.contains(palavras[i])){
-				if(i<palavras.length){
-					
-				}
-			}
-			
-			i++;
-		}
+//		int i = 0;
+//		StringBuilder sb = new StringBuilder();
+//		while (i<palavras.length) {
+//			if(entities.contains(palavras[i])){
+//				if(i<palavras.length){
+//					
+//				}
+//			}
+//			
+//			i++;
+//		}
 		
 		
 		return null;
