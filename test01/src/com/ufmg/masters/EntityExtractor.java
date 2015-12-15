@@ -9,6 +9,7 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import org.simpleframework.xml.Serializer;
@@ -118,17 +119,29 @@ public class EntityExtractor {
 	}
 
 	public String extract(String[] palavras){
-		
+		HashMap<String, String> palavrasEntity = new HashMap<String, String>();
 		for (int i = 0; i < palavras.length; i++) {
 			for (int j = 0; j < entities.size(); j++) {
 				if(entities.get(j).getEM()!=null){
 					if (entities.get(j).getEM().equals(palavras[i])) {
-						return entities.get(j).getCATEG();
+						palavrasEntity.put(palavras[i], entities.get(j).getCATEG());
 					}
 				}
 			}
-			
 		}
+		int i = 0;
+		StringBuilder sb = new StringBuilder();
+		while (i<palavras.length) {
+			if(entities.contains(palavras[i])){
+				if(i<palavras.length){
+					
+				}
+			}
+			
+			i++;
+		}
+		
+		
 		return null;
 	}
 	

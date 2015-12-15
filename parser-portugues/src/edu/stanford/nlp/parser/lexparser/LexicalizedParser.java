@@ -2062,7 +2062,7 @@ public class LexicalizedParser implements ViterbiParserWithOptions, Function<Obj
 							numSkipped++;
 						}
 						try {
-//							treePrint.printTree(ansTree, Integer.toString(num), pwo);
+							treePrint.printTree(ansTree, Integer.toString(num), pwo);
 							System.out.println("era para imprimir a tree aqui");
 							trees.add(ansTree);
 						} catch (RuntimeException re) {

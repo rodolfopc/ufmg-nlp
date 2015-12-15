@@ -4,5 +4,9 @@ Onde %%VP%%?
 #S <  (NP $ (VP))
 [.entity=LOCAL.]Onde %%VP%%?
 [.entity=COISA.]O que %%VP%%?
-[.entity=PESSOA.]Quem %%VP%%?
+[.entity=TEMPO.]Quando %%VP%%?
+
+#S < NP $ (VP < ( VP <- V ) $  ( NP <- ART ))
+[.entity=LOCAL.]Onde %%VP%%?
+[.entity=COISA.]O que %%VP%%?
 [.entity=TEMPO.]Quando %%VP%%?

@@ -1,7 +1,6 @@
 package com.ufmg.masters;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
@@ -91,7 +90,7 @@ public class MyDemo {
 	public static void generateQuestions(String template, List<Tree> trees){
 
 		
-		if(trees!=null && template!=null){
+		if(trees!=null && template!=null && !template.equals("")){
 			String patternConditions = "\\[\\.(\\D+)\\.\\]";
 			
 			String pattern = "\\%\\%([A-Z]+)\\%\\%";
@@ -164,7 +163,7 @@ public class MyDemo {
 		EntityExtractor eex = new EntityExtractor();
 		String entityfound = eex.extract(phrase);
 		if(entityfound!=null){
-//			System.out.println(entityfound);
+			System.out.println(entityfound);
 			if(entityfound.contains(entity))
 				return true;
 		}
