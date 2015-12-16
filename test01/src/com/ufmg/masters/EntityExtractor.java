@@ -118,13 +118,16 @@ public class EntityExtractor {
 		}
 	}
 
+	
+	HashMap<String, String> palavrasEntity;
+	String frase;
 	public String extract(String[] palavras){
-		HashMap<String, String> palavrasEntity = new HashMap<String, String>();
+		palavrasEntity = new HashMap<String, String>();
 		for (int i = 0; i < palavras.length; i++) {
 			for (int j = 0; j < entities.size(); j++) {
 				if(entities.get(j).getEM()!=null){
 					if (entities.get(j).getEM().equals(palavras[i])) {
-						return palavras[i];
+						return entities.get(j).getCATEG();
 //						palavrasEntity.put(palavras[i], entities.get(j).getCATEG());
 					}
 				}
@@ -132,19 +135,24 @@ public class EntityExtractor {
 		}
 //		int i = 0;
 //		StringBuilder sb = new StringBuilder();
-//		while (i<palavras.length) {
-//			if(entities.contains(palavras[i])){
-//				if(i<palavras.length){
-//					
-//				}
-//			}
-//			
-//			i++;
-//		}
+//		formarFrase(palavras, i, sb);
 		
 		
 		return null;
 	}
+	
+	
+//	private String formarFrase(String[] palavras, int i, StringBuilder sb){
+//		if(i>)
+//			if(entities.contains(palavras[i])){
+//				if(i<palavras.length){
+//				}
+//			}
+//			
+//			i++;
+//		
+//	}
+	
 	
 	
 	
