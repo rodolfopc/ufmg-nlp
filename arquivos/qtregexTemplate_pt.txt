@@ -1,5 +1,5 @@
-#S < VP < NA
-Onde %%VP%%?  
+#S < (( NP < (ART  $ N') ) $  ( VP < ( VP $ PP )))
+[.entity=LOCAL.]Onde %%VP%%?
 
 #S <  (NP $ (VP))
 [.entity=LOCAL.]Onde %%VP%%?

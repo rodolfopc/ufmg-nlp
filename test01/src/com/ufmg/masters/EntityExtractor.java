@@ -9,6 +9,7 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
@@ -25,7 +26,7 @@ public class EntityExtractor {
 	public EntityExtractor() {
 		entities = new ArrayList<HaremObject>();
 		
-		String[] haremFiles = { "/Users/rodolfopc/git/ufmg-qg/arquivos/CDSegundoHAREM_TEMPO.xml" , "/Users/rodolfopc/git/ufmg-qg/arquivos/CDSegundoHAREMReRelEM.xml"};
+		String[] haremFiles = { "../arquivos/CDSegundoHAREM_TEMPO.xml" , "../arquivos/CDSegundoHAREMReRelEM.xml"};
 		
 		for (int i = 0; i < haremFiles.length; i++) {
 			HaremList list = openFile(haremFiles[i]);
@@ -44,8 +45,8 @@ public class EntityExtractor {
 	}
 	
 	public void initializer() throws IOException{
-		getEntities("/Users/rodolfopc/git/ufmg-qg/arquivos/coleccoes/CDSegundoHAREM_TEMPO.xml");
-		getEntities("/Users/rodolfopc/git/ufmg-qg/arquivos/coleccoes/CDSegundoHAREMReRelEM.xml");
+		getEntities("../arquivos/coleccoes/CDSegundoHAREM_TEMPO.xml");
+		getEntities("../arquivos/coleccoes/CDSegundoHAREMReRelEM.xml");
 	}
 	
 	public HaremList openFile(String filePath){
@@ -96,7 +97,7 @@ public class EntityExtractor {
 		
 		String fileName = filePath.substring(filePath.lastIndexOf("/")+1, filePath.lastIndexOf("."));
 		
-		saveFile(sb, "/Users/rodolfopc/git/ufmg-qg/arquivos/"+fileName+".xml");
+		saveFile(sb, "../arquivos/"+fileName+".xml");
 		
 	}
 	
@@ -120,38 +121,23 @@ public class EntityExtractor {
 
 	
 	HashMap<String, String> palavrasEntity;
-	String frase;
-	public String extract(String[] palavras){
+	public HashMap<String, String> extract(String[] palavras){
+		String frase = Arrays.toString(palavras);
 		palavrasEntity = new HashMap<String, String>();
-		for (int i = 0; i < palavras.length; i++) {
-			for (int j = 0; j < entities.size(); j++) {
-				if(entities.get(j).getEM()!=null){
-					if (entities.get(j).getEM().equals(palavras[i])) {
-						return entities.get(j).getCATEG();
-//						palavrasEntity.put(palavras[i], entities.get(j).getCATEG());
+		for (int i = 0; i < entities.size(); i++) {
+			if(entities.get(i).getEM()!=null){
+				if(frase.contains(entities.get(i).getEM())){
+					if (!palavrasEntity.containsKey(entities.get(i).getEM())) {
+						palavrasEntity.put(entities.get(i).getEM(), entities.get(i).getCATEG());
 					}
 				}
 			}
 		}
-//		int i = 0;
-//		StringBuilder sb = new StringBuilder();
-//		formarFrase(palavras, i, sb);
+		System.out.print(palavrasEntity.toString()+"\n");
 		
-		
-		return null;
+		return palavrasEntity;
 	}
 	
-	
-//	private String formarFrase(String[] palavras, int i, StringBuilder sb){
-//		if(i>)
-//			if(entities.contains(palavras[i])){
-//				if(i<palavras.length){
-//				}
-//			}
-//			
-//			i++;
-//		
-//	}
 	
 	
 	

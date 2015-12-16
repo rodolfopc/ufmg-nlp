@@ -8,6 +8,7 @@ import java.io.PrintWriter;
 import java.io.StringReader;
 import java.io.UnsupportedEncodingException;
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -37,11 +38,11 @@ public class MyDemo {
 
 	public static void main(String[] args) throws IOException {
 
-		BufferedReader readTree = new BufferedReader(new FileReader("/Users/rodolfopc/git/ufmg-qg/arquivos/file.txt"));
+		BufferedReader readTree = new BufferedReader(new FileReader("../arquivos/file.txt"));
 		String tree = readTree.readLine();
 		while (tree != null) {
 		
-			BufferedReader gIn = new BufferedReader(new FileReader("/Users/rodolfopc/git/ufmg-qg/arquivos/qtregexTemplate_pt.txt"));
+			BufferedReader gIn = new BufferedReader(new FileReader("../arquivos/qtregexTemplate_pt.txt"));
 			String line = gIn.readLine();
 			List<Tree> trees = null;
 			boolean achouTregex = false;
@@ -152,7 +153,6 @@ public class MyDemo {
 			}
 		}
 		
-		
 		return isValid;
 		
 	}
@@ -161,10 +161,10 @@ public class MyDemo {
 
 		
 		EntityExtractor eex = new EntityExtractor();
-		String entityfound = eex.extract(phrase);
+		HashMap<String, String> entityfound = eex.extract(phrase);
 		if(entityfound!=null){
 			System.out.println(entityfound);
-			if(entityfound.contains(entity))
+			if(entityfound.containsValue(entity))
 				return true;
 		}
 		
