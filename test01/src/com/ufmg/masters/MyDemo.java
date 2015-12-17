@@ -49,6 +49,7 @@ public class MyDemo {
 			String template = null;
 			while (line != null) {
 			    if(line.contains("#")){
+					System.out.print(line+ "\n");
 			    	line = line.replace("#", "");
 					trees = demoTregex(line, tree);
 					if(!trees.isEmpty()){
@@ -57,7 +58,7 @@ public class MyDemo {
 			    } else {
 			    	if(achouTregex) {
 			    		template = line;
-
+			    		
 			    		generateQuestions(template, trees);
 			    	} 
 			    }
@@ -93,7 +94,6 @@ public class MyDemo {
 		
 		if(trees!=null && template!=null && !template.equals("")){
 			String patternConditions = "\\[\\.(\\D+)\\.\\]";
-			
 			String pattern = "\\%\\%([A-Z]+)\\%\\%";
 
 			String expression = patternMatcher(pattern, template);

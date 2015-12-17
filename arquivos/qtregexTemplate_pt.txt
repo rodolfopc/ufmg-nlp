@@ -1,7 +1,7 @@
 #S < (( NP < (ART  $ N') ) $  ( VP < ( VP $ PP )))
 [.entity=LOCAL.]Onde %%VP%%?
 
-#S <  (NP $ (VP))
+#S <  (NP $ (VP < V))
 [.entity=LOCAL.]Onde %%VP%%?
 [.entity=COISA.]O que %%VP%%?
 [.entity=TEMPO.]Quando %%VP%%?
